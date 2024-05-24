@@ -1,0 +1,30 @@
+.footer-social li a:hover{
+    background-color:#00bcd4;
+    color: #ffffff;
+}
+
+.footer-social a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50px;
+    font-size: 17px;
+    margin: 10px 5px;
+    border: 1px solid transparent;
+    -webkit-transition: background-color .2s ease-in-out;
+    -moz-transition: background-color .2s ease-in-out;
+    -ms-transition: background-color .2s ease-in-out;
+    -o-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
+}
+
+.footer-social ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+
+}
