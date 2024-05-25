@@ -61,7 +61,7 @@ const Footer = () => {
               </ul>
             </div>
             <p style={{color:"#696969", fontSize:"13px", textAlign:"center"}} className='text-center'>
-              © 2020 SriwijayaDigital. Made With Love By{" "}
+              © 2020 UKU. Made With Love By{" "}
               AGT
             </p>
           </div>

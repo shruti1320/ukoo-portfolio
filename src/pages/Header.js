@@ -1,22 +1,41 @@
-// Header.js
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../components/Header/Logo";
 import NavMenu from "../components/Header/NavMenu";
 import OffcanvasMenu from "../components/Header/OffcanvasMenu";
 import OffcanvasToggleButton from "../components/Header/OffcanvasToggleButton";
 import "../css/Header.scss";
+import "../css/NavMenu.scss";
+const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
 
-const Header = () => (
-  <header>
-    <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <div className="container">
-        <Logo />
-        <NavMenu />
-      </div>
-      <OffcanvasToggleButton />
-      <OffcanvasMenu />
-    </nav>
-  </header>
-);
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <header>
+      <nav className={`navbar fixed-top navbar-expand-lg ${scrolled ? 'navbar-scrolled' : 'navbar-transparent'}`}>
+        <div className="container">
+          <Logo />
+          <NavMenu />
+        <OffcanvasToggleButton />
+        </div>
+        <OffcanvasMenu />
+      </nav>
+    </header>
+  );
+};
 
 export default Header;
