@@ -50,3 +50,30 @@
     display: block;
     padding: 0.5rem 1rem;
   }
+
+  .navbar-collapse {
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+
+/* Regular header styles */
+.navbar-collapse {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Regular link styles */
+.nav-link {
+  color: white;  
+  transition: color 0.3s ease-in-out;
+}
+
+/* Header styles when scrolled */
+.navbar-collapse.scrolled {
+  background-color: white; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Link styles when scrolled */
+.navbar-collapse.scrolled .nav-link {
+  color: black; 
+}
