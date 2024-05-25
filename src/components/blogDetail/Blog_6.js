@@ -12,7 +12,7 @@ export default function Blog_6() {
             <span>0 Comments</span>
           </div>
           <div className="post-thumbnail">
-            <img src={uku6} alt="Networking" />
+            <img src={uku6} alt="Networking" style={{width:"100%"}}/>
           </div>
           <div className="post-content">
             <p>Networking is a fundamental aspect of professional growth and success, enabling individuals to build meaningful connections, expand their knowledge, and uncover new opportunities within their industry. In this article, we'll explore the power of networking and share strategies for building and nurturing valuable professional relationships.</p>

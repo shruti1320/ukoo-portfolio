@@ -1,6 +1,6 @@
 import React from 'react';
 import "../../css/Blog.css"
-import uku1 from "../../images/Banner/uku.jpg";
+import uku1 from "../../images/Banner/uku3.jpeg";
 
 export default function Blog_1() {
   return (
@@ -13,7 +13,7 @@ export default function Blog_1() {
         <span>3 Comments</span>
       </div>
       <div className="post-thumbnail">
-        <img src={uku1} alt="The Psychology of Jewelry" />
+        <img src={uku1} alt="The Psychology of Jewelry" style={{width:"100%"}} />
       </div>
       <div className="post-content">
         <p>Jewelry is more than just an accessory; it’s a form of self-expression that speaks volumes about our personality and mood. The pieces we choose to wear can tell a story, convey our emotions, and reflect our innermost selves. In this blog, we’ll explore how different types of jewelry can reveal various aspects of who we are.</p>

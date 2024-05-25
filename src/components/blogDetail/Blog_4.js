@@ -12,7 +12,7 @@ export default function Blog_4() {
             <span>0 Comments</span>
           </div>
           <div className="post-thumbnail">
-            <img src={uku4} alt="Jewelry Trends" />
+            <img src={uku4} alt="Jewelry Trends" style={{width:"100%"}}/>
           </div>
           <div className="post-content">
             <p>Accessorizing with jewelry is an art form that can elevate any outfit to the next level. As we embrace the new season, it's time to explore the latest jewelry trends that will add flair and personality to your wardrobe.</p>

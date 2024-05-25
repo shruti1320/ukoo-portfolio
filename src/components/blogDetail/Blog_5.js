@@ -12,7 +12,7 @@ export default function Blog_5() {
         <span>0 Comments</span>
       </div>
       <div className="post-thumbnail">
-        <img src={uku5} alt="Digital Nomad Lifestyle" />
+        <img src={uku5} alt="Digital Nomad Lifestyle" style={{width:"100%"}}/>
       </div>
       <div className="post-content">
         <p>The digital nomad lifestyle has gained popularity in recent years, offering individuals the freedom to work from anywhere in the world while exploring new destinations. But balancing work and travel can be challenging. In this article, we'll explore strategies for maintaining productivity and wellness while living the digital nomad lifestyle.</p>

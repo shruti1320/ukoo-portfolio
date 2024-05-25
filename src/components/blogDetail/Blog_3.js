@@ -13,7 +13,7 @@ export default function Blog_3() {
             <span>0 Comments</span>
           </div>
           <div className="post-thumbnail">
-            <img src={uku3} alt="Portrait Photography"  />
+            <img src={uku3} alt="Portrait Photography"   style={{width:"100%"}}/>
           </div>
           <div className="post-content">
             <p>Portrait photography is more than just taking pictures of people. It's about capturing their essence, personality, and emotions in a single frame. In this article, we'll explore some creative techniques for mastering portrait photography and bringing out the best in your subjects.</p>

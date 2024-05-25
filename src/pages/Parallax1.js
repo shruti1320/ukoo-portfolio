@@ -13,7 +13,7 @@ import uku6 from "../images/Banner/uku22.jpeg";
 import uku7 from "../images/Banner/uku23.jpeg";
 import uku8 from "../images/Banner/uku19.jpeg";
 import uku9 from "../images/Banner/uku20.jpeg";
-import logob from "../images/Logo/bend-logo.jpeg";
+import logob from "../images/Logo/black-bend.jpeg";
 import "../css/Parallax1.css";
 import Modal from 'react-modal';
 import Blog_1 from "../components/blogDetail/Blog_1";
@@ -24,28 +24,54 @@ import Blog_5 from "../components/blogDetail/Blog_5";
 import Blog_6 from "../components/blogDetail/Blog_6";
 import Blog_7 from "../components/blogDetail/Blog_7";
 
-
 const customStyles = {
   overlay: {
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    zIndex: 1000
+    backgroundColor: 'rgba(0, 0, 0, 0.75)', // Darker overlay for a more dramatic effect
+    zIndex: 1000,
+    transition: 'opacity 0.5s ease-in-out', // Smooth transition for overlay
   },
   content: {
-    top: '70%',
+    top: '50%',
     left: '50%',
     right: 'auto',
     bottom: 'auto',
     marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-    width: '80%', 
-    maxWidth: '400px', 
-    maxHeight: '80%', 
+    transform: 'translate(-50%, -50%)', // Center the modal
+    width: '80%',
+    maxWidth: '700px',
+    maxHeight: '80%',
     overflow: 'auto',
-    borderRadius: '10px',
-    border: 'none', 
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' 
+    borderRadius: '15px', // Slightly more rounded corners
+    border: 'none',
+    boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)', // Deeper shadow for more depth
+    background: 'linear-gradient(135deg, #ffffff, #f1f1f1)', // Light gradient background
+    padding: '20px', // Add padding for better content spacing
+    transition: 'all 0.3s ease-in-out', // Smooth transition for content appearance
+    animation: 'modalFadeIn 0.5s, gradientChange 10s infinite alternate', // Fade-in animation for the modal and continuous gradient change
+  },
+  '@keyframes modalFadeIn': {
+    from: {
+      opacity: 0,
+      transform: 'translate(-50%, -40%)', 
+    },
+    to: {
+      opacity: 1,
+      transform: 'translate(-50%, -50%)', 
+    }
+  },
+  '@keyframes gradientChange': {
+    '0%': {
+      background: 'linear-gradient(135deg, #ff7e5f, #feb47b)',
+    },
+    '50%': {
+      background: 'linear-gradient(135deg, #6a11cb, #2575fc)', 
+    },
+    '100%': {
+      background: 'linear-gradient(135deg, #ff7e5f, #feb47b)', 
+    }
   }
 };
+
 
 export default function Parallax1() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -102,7 +128,7 @@ export default function Parallax1() {
         {modalContent==7&&<Blog_7 />}    
         {modalContent==8&&<Blog_7 />}    
         {modalContent==9&&<Blog_1 />} 
-        <button className="btn" onClick={closeModal}>Close</button>
+        {/* <button className="btn" onClick={closeModal}>Close</button> */}
       </Modal>
       
       <ParallaxBanner style={{ aspectRatio: "2 / 1" }}>
@@ -189,7 +215,7 @@ export default function Parallax1() {
         </ParallaxBannerLayer>
       </ParallaxBanner>
 
-      <ParallaxBanner style={{ aspectRatio: "2 / 1" }}>
+      <ParallaxBanner style={{ aspectRatio: "3 / 1" }}>
         <ParallaxBannerLayer image={logob} speed={-20} />
         {/* <ParallaxBannerLayer>
         <div className="content-wrapper">

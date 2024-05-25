@@ -12,7 +12,7 @@ export default function Blog_7() {
         <span>0 Comments</span>
       </div>
       <div className="post-thumbnail">
-        <img src={uku7} alt="Exhibit Experience" />
+        <img src={uku7} alt="Exhibit Experience" style={{width:"100%"}}/>
       </div>
       <div className="post-content">
         <p>At expos, your brand's exhibit serves as its ambassador, representing your values, offerings, and identity to potential clients and partners. Crafting an exquisite exhibit experience is essential for elevating your brand presence and leaving a lasting impression on attendees. In this article, we'll explore strategies for creating a standout exhibit that captivates and engages your audience.</p>

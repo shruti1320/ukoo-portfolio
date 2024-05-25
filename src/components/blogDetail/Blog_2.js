@@ -13,7 +13,7 @@ export default function Blog_2() {
             <span>0 Comments</span>
           </div>
           <div className="post-thumbnail">
-            <img src={uku2} alt="Jewelry in Everyday Outfits"  />
+            <img src={uku2} alt="Jewelry in Everyday Outfits"  style={{width:"100%"}}/>
           </div>
           <div className="post-content">
             <p>Jewelry has the remarkable ability to enhance our everyday outfits while serving practical functions. From adding a touch of elegance to providing essential features like timekeeping and health monitoring, jewelry plays a crucial role in our daily lives. Let's delve into the intersection of fashion and function in the realm of jewelry.</p>
