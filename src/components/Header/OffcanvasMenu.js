@@ -20,12 +20,12 @@ const OffcanvasMenu = () => {
     aria-labelledby="offcanvasRightLabel"
   >
     <div className="offcanvas-header">
-      <button
+      <div
         type="button"
         className="btn-close text-reset btn-close-white ms-auto"
         data-bs-dismiss="offcanvas"
         aria-label="Close"
-      ></button>
+      ></div>
     </div>
 
     <div
@@ -36,7 +36,7 @@ const OffcanvasMenu = () => {
         height: "100vh",
       }}
     >
-      <ul style={{ listStyleType: "none" }} className="m-auto">
+      <ul style={{ listStyleType: "none" , paddingLeft: "0px"}} className="m-auto">
         <li className="nav-item fs-5">
           <a className="nav-link text-white custom-underline"  data-bs-dismiss="offcanvas" aria-current="page"  onClick={() => scrollToSection("banner1")} href="#home">
             Ukoo - The Brand

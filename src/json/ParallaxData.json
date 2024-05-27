@@ -1,0 +1,138 @@
+[
+    {
+      "id": "banner1",
+      "style": {
+        "aspectRatio": "2 / 1"
+      },
+      "layers": [
+        {
+          "image": "uku1.jpg",
+          "className": "banner1",
+          "speed": -20,
+          "style": {}
+        }
+      ]
+    },
+    {
+      "id": "banner2",
+      "style": {
+        "aspectRatio": "2 / 1"
+      },
+      "layers": [
+        {
+          "image": "../images/Banner/uku4.jpeg",
+          "className": "banner2",
+          "speed": -20,
+          "style": {}
+        }
+      ]
+    },
+    {
+      "id": "banner3",
+      "style": {
+        "aspectRatio": "2 / 1"
+      },
+      "layers": [
+        {
+          "image": "../images/Banner/uku3.jpeg",
+          "className": "banner3",
+          "speed": -20,
+          "style": {}
+        }
+      ]
+    },
+    {
+      "id": "banner4",
+      "style": {
+        "aspectRatio": "2 / 1"
+      },
+      "layers": [
+        {
+          "image": "../images/Banner/uku8.jpeg",
+          "className": "banner4",
+          "speed": -20,
+          "style": {
+            "inset": "-45px 0px -300px"
+          }
+        }
+      ]
+    },
+    {
+      "id": "banner5",
+      "style": {
+        "aspectRatio": "2 / 1"
+      },
+      "layers": [
+        {
+          "image": "../images/Banner/uku24.jpeg",
+          "speed": -20,
+          "style": {}
+        }
+      ]
+    },
+    {
+      "id": "banner6",
+      "style": {
+        "aspectRatio": "2 / 1"
+      },
+      "layers": [
+        {
+          "image": "../images/Banner/uku22.jpeg",
+          "className": "banner6",
+          "speed": -20,
+          "style": {
+            "inset": "-50px 0px -300px"
+          }
+        }
+      ]
+    },
+    {
+      "id": "banner7",
+      "style": {
+        "aspectRatio": "2 / 1"
+      },
+      "layers": [
+        {
+          "image": "../images/Banner/uku23.jpeg",
+          "className": "banner7",
+          "speed": -20,
+          "style": {
+            "inset": "-50px 0px -150px"
+          }
+        }
+      ]
+    },
+    {
+      "id": "banner8",
+      "style": {
+        "aspectRatio": "2 / 1"
+      },
+      "layers": [
+        {
+          "image": "../images/Banner/uku19.jpeg",
+          "className": "banner8",
+          "speed": -20,
+          "style": {
+            "inset": "-30px 0px -150px"
+          }
+        }
+      ]
+    },
+    {
+      "id": "banner9",
+      "style": {
+        "aspectRatio": "2 / 1"
+      },
+      "layers": [
+        {
+          "image": "../images/Banner/uku20.jpeg",
+          "className": "banner9",
+          "speed": -20,
+          "style": {
+            "inset": "-40px 0px -150px"
+          }
+        }
+      ]
+    }
+  ]
+  
