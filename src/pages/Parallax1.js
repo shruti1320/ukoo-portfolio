@@ -34,7 +34,7 @@ export default function Parallax1() {
         <ParallaxBannerLayer
           image={uku2}
           className="banner7"
-          translateY={[-20, 20]}
+          translateY={[-35, 25]}
           // speed={20}
           // style={{ inset: "-50px 0px -150px" }}
         />
@@ -61,7 +61,7 @@ export default function Parallax1() {
         <ParallaxBannerLayer
           image={uku7}
           className="banner4"
-          translateY={[-15, 20]}
+          translateY={[-20, 25]}
           // speed={20}
           // style={{ inset: "-45px 0px -300px" }}
         />
@@ -70,7 +70,7 @@ export default function Parallax1() {
 
       <ParallaxBanner id="banner5" style={{ aspectRatio: "2 / 1" }}>
         <ParallaxBannerLayer image={uku6} 
-         translateY={[-15, 35]}
+         translateY={[-25, 55]}
         // speed={-20} 
         
         />
