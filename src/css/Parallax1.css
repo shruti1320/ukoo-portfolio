@@ -1,109 +1,75 @@
 .content-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
     justify-content: center;
     height: 100%;
     padding: 20px; 
   }
   
-  .text-content {
-    color: black;
-    padding: 10px; 
-    margin-bottom: 10px; 
-  }
 
-  .btn1 {
-    background-color: #ff7e5f;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 50px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    display: inline-block;
-    transition: background-color 0.3s;
-  }
   
-  .btn1:hover {
-    background-color: #f2563e; /* Change the background color on hover */
-  }
-  @media screen and (max-width: 768px) {
-    .btn1 {
-      font-size: 14px;
-      padding: 8px 16px;
-    }
-  }
-  
-  @media screen and (max-width: 576px) {
-    .btn1 {
-      font-size: 12px;
-      padding: 6px 12px;
-      flex-direction: column;
-    }
-
-    @media  screen and(max-width:400px) {
-      .btn1{
-        font-size: 12px;
-        padding:6px 12px;
-        flex-direction: column;
-      }
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .ParallaxBannerLayer img {
-      width: 100%; /* Set the image width to 100% of its container */
-      height: auto; /* Automatically adjust the height to maintain aspect ratio */
-    }
-  }
-  @media screen and (max-width: 400px) {
-    .ParallaxBannerLayer img {
-      width: 100%; /* Set the image width to 100% of its container */
-      height: auto; /* Automatically adjust the height to maintain aspect ratio */
-    }
-  }
-  @media screen and (max-width: 300px) {
-    .ParallaxBannerLayer img {
-      width: 100%; /* Set the image width to 100% of its container */
-      height: auto; /* Automatically adjust the height to maintain aspect ratio */
-    }
-  }
-
   .content-wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
   }
+
+  .text-content {
+    color: black;
+    padding: 5px;
+    font-size: 1.5rem;
+  }
+
+  .btn1 {
+    color: white;
+    padding: 10px 20px;
+    border-color: white;
+    background: transparent;
+    border-radius: 50px;
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 1.8em;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+
+  @media screen and (max-width: 768px) {
   
-  @media (max-width: 768px) {
     .text-content {
-      font-size: 1.2rem; /* Adjust font size for smaller screens */
-      padding: 5px;
+      font-size: 1.3rem; 
+     
     }
   
     .btn1 {
-      font-size: 1rem; /* Adjust button size for smaller screens */
-      padding: 8px 16px;
+      font-size: 1rem; 
       margin-top: 10px;
     }
   }
-  
-  @media (max-width: 480px) {
-    .text-content {
-      font-size: 1rem; /* Further adjust font size for very small screens */
-      padding: 3px;
-    }
-  
-    .btn1 {
-      font-size: 0.9rem; /* Further adjust button size for very small screens */
-      padding: 6px 12px;
-      margin-top: 5px;
+
+  @media screen and (max-width: 680px) {
+    #banner1 , #banner2, #banner3, #banner4 , #banner5 , #banner6 , #banner7, #banner8 , #banner9 , #banner10 {
+      width: 100%; 
+      height: 100vh; 
+      object-fit: cover;
     }
   }
   
+  @media screen and (max-width: 576px) {
+    .btn1 {
+      flex-direction: column;
+    }
+
+  }
+
+
+  @media (max-width: 480px) {
+    .btn1 {
+      margin-top: 5px;
+    }
+  }
