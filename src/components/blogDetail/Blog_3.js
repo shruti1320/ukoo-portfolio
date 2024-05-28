@@ -9,8 +9,6 @@ export default function Blog_3() {
           <h1>Creative Portrait Photography: Techniques for Capturing Personality and Expression</h1>
           <div className="post-meta">
             <span>{new Date().toLocaleDateString()}</span>
-            <span> | </span>
-            <span>0 Comments</span>
           </div>
           <div className="post-thumbnail">
             <img src={uku3} alt="Portrait Photography"   style={{width:"100%"}}/>
@@ -38,7 +36,7 @@ export default function Blog_3() {
             <p>Once you've captured your portraits, don't forget the importance of post-processing and editing. Use editing software to enhance colors, contrast, and clarity, and experiment with creative effects to give your portraits a unique look and feel.</p>
             <p>But remember, less is often more when it comes to editing. Don't overdo it with filters and effects – aim for a natural and timeless look that highlights the beauty of your subjects.</p>
             
-            <p>By mastering these creative techniques and approaches to portrait photography, you'll be able to capture personality and expression in your images like never before. So grab your camera, find some willing subjects, and start capturing unforgettable portraits today!</p>
+            <p>In Conclusion,By mastering these creative techniques and approaches to portrait photography, you'll be able to capture personality and expression in your images like never before. So grab your camera, find some willing subjects, and start capturing unforgettable portraits today!</p>
           </div>
         </article>
       </div>

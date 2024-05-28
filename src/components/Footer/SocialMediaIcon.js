@@ -1,12 +1,12 @@
-// SocialMediaIcon.js
 import React from 'react';
+import "../../css/Footer.scss";
 
-const SocialMediaIcon = ({ href, svgPath, width, height , viewBoxHeight, viewBoxWidth}) => {
+const SocialMediaIcon = ({ href, svgPath, width, height, viewBoxHeight, fill, viewBoxWidth }) => {
   return (
-    <li>
-      <a href={href}>
-        <svg xmlns="http://www.w3.org/2000/svg" height={height} width={width} viewBox={`0 0 ${viewBoxHeight} ${viewBoxWidth}`}>
-          <path fill="#696969" d={svgPath} />
+    <li className="footer-social-icon" style={{ backgroundColor: fill }}>
+      <a href={href} style={{ display: 'block', width: `${width}px`, height: `${height}px` }}>
+        <svg xmlns="http://www.w3.org/2000/svg" height={height} width={width} viewBox={`0 0 ${viewBoxHeight} ${viewBoxWidth}`} fill={fill}>
+          <path fill="#fff" d={svgPath} />
         </svg>
       </a>
     </li>

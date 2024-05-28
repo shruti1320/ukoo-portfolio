@@ -1,53 +1,103 @@
-import React from 'react';
-import "../../css/Blog.css"
-import uku1 from "../../images/Banner/uku3.jpeg";
+import React from "react";
+import "../../css/Blog.css";
+import uku1 from "../../images/Banner/uku13.jpeg";
 
 export default function Blog_1() {
   return (
     <div className="container">
-    <article className="blog-post">
-      <h1>The Psychology of Jewellery: How Accessories Reflect Personality and Mood</h1>
-      <div className="post-meta">
-        <span>May 19, 2019</span>
-        <span> | </span>
-        <span>3 Comments</span>
-      </div>
-      <div className="post-thumbnail">
-        <img src={uku1} alt="The Psychology of Jewelry" style={{width:"100%"}} />
-      </div>
-      <div className="post-content">
-        <p>Jewelry is more than just an accessory; it’s a form of self-expression that speaks volumes about our personality and mood. The pieces we choose to wear can tell a story, convey our emotions, and reflect our innermost selves. In this blog, we’ll explore how different types of jewelry can reveal various aspects of who we are.</p>
-        
-        <h2>Jewelry and Personality</h2>
-        <p>Our choice of jewelry can be a mirror to our personality traits. For example, someone who loves bold, statement pieces might have a vibrant, outgoing personality, while those who prefer delicate, minimalist jewelry may be more reserved and detail-oriented. Here are some common personality traits reflected through jewelry:</p>
-        <ul>
-          <li><strong>Bold and Adventurous:</strong> Individuals who wear large, colorful, or unconventional jewelry often enjoy taking risks and are not afraid to stand out.</li>
-          <li><strong>Elegant and Sophisticated:</strong> Classic pieces like pearls and diamonds are usually favored by those who appreciate tradition and timeless style.</li>
-          <li><strong>Creative and Artistic:</strong> Unique, handcrafted, or vintage jewelry often appeals to creative souls who value originality.</li>
-          <li><strong>Minimalist and Practical:</strong> Simple, understated pieces are often chosen by those who prefer functionality and simplicity.</li>
-        </ul>
-        
-        <h2>Jewelry and Mood</h2>
-        <p>Just as our clothing choices can be influenced by our mood, so can our jewelry selections. Jewelry can act as a mood enhancer, boosting our confidence and altering our emotional state. Here are some ways in which jewelry can reflect and affect our mood:</p>
-        <ul>
-          <li><strong>Feeling Empowered:</strong> Wearing bold jewelry can make us feel powerful and assertive, ready to take on the world.</li>
-          <li><strong>Seeking Comfort:</strong> During times of stress or sadness, we might reach for pieces that have sentimental value or provide a sense of security.</li>
-          <li><strong>Expressing Joy:</strong> Bright, colorful jewelry can be a reflection of a happy, optimistic mood and a desire to share that positivity.</li>
-          <li><strong>Desiring Calm:</strong> Simple, minimalist pieces can help create a sense of calm and focus, ideal for moments when we need to center ourselves.</li>
-        </ul>
+      <article className="blog-post">
+        <h1 className="post-title">
+          Our Mission and Vision: What Drives The Ukoo
+        </h1>
+        <div className="post-meta">
+          <span>May 19, 2019</span>
+        </div>
+        <div className="post-thumbnail">
+          <img
+            src={uku1}
+            alt="The Psychology of Jewelry"
+            style={{ width: "100%" }}
+          />
+        </div>
+        <div className="post-content">
+          <div className="post-column-wrapper">
+            <div className="post-column">
+              <p>
+                At The Ukoo, we believe that jewelry is more than just
+                adornment—it's an expression of individuality, a celebration of
+                life's moments, and a connection to our shared humanity. Our
+                mission and vision are the guiding stars that shape every piece
+                we create and every decision we make. We are thrilled to share
+                with you the core principles that define who we are and what we
+                strive to achieve in the world of jewelry.
+              </p>
+              <h4>Our Mission</h4>
+              <h2>Crafting Beauty, Inspiring Confidence</h2>
+              <p>
+              The Ukoo's mission is to craft exquisite jewelry that not only enhances beauty but also inspires confidence and self-expression. We are dedicated to creating timeless pieces that our customers can cherish for a lifetime.
+              </p>
+              <ul>
+                <li><string>Artistry:</string>
+                We are committed to the highest standards of artistry and craftsmanship, ensuring each piece of jewelry is a work of art.
+                </li>
+                <li><strong>Quality:</strong>         
+                Our jewelry is made with the finest materials and meticulous attention to detail, providing our customers with exceptional quality they can trust.
+                </li>
+                <li><strong>Empowerment: </strong>
+                We believe that jewelry should empower the wearer. Our designs are created to help individuals express their unique style and personality.
+                </li>
+                <li><strong>Sustainability:</strong>
+                We are dedicated to sustainable and ethical practices, from sourcing our materials responsibly to ensuring fair labor conditions in our production process.
+                </li>
+              </ul>
+            </div>
+            <div className="post-column">
+              <h4>Our Vision</h4>
+              <h2>A World of Elegance and Connection</h2>
+              <p>
+              Our vision at The Ukoo is to create a world where elegance and connection are at the forefront of our jewelry experience. We envision a future where our brand brings people together, celebrating life's special moments and fostering a sense of community.
+              </p>
+              <ul>
+                <li><strong>Global Elegance:</strong>
+                We aim to bring the elegance of The Ukoo to a global audience, sharing our passion for beautiful jewelry with people from all walks of life.
+                </li>
+                <li><strong>Innovative Design: </strong>
+                We strive to be leaders in innovative jewelry design, constantly pushing the boundaries of creativity and style.
+                </li>
+                <li><strong>Personal Connection:</strong>
+                We see a future where our jewelry serves as a personal connection, creating lasting memories and bonds between loved ones.
+                </li>
+                <li><strong>Sustainable Impact:</strong>
+                Our vision includes a strong commitment to sustainability, ensuring that our growth benefits not only our customers but also the environment and communities we touch.
+                </li>
+              </ul>
 
-        <h2>Choosing Jewelry Intentionally</h2>
-        <p>Understanding the psychological impact of jewelry can help us make more intentional choices about what we wear. By selecting pieces that resonate with our current mood or the persona we wish to project, we can enhance our self-expression and emotional well-being. Here are some tips for choosing jewelry with intention:</p>
-        <ul>
-          <li><strong>Consider the Occasion:</strong> Think about what message you want to convey in different settings, whether it’s at work, a social event, or a casual outing.</li>
-          <li><strong>Reflect on Your Mood:</strong> Pay attention to how you’re feeling and choose jewelry that aligns with or enhances your emotional state.</li>
-          <li><strong>Embrace Versatility:</strong> Invest in versatile pieces that can be layered or paired with various outfits to match different moods and occasions.</li>
-          <li><strong>Express Your True Self:</strong> Don’t be afraid to wear pieces that truly reflect who you are, even if they’re unconventional or unique.</li>
-        </ul>
+              <h2>How We Live Our Mission and Vision</h2>
+              <p>
+              At The Ukoo, we don’t just talk about our mission and vision—we live it every day. Here’s how we put our principles into action:
+              </p>
+              <ul>
+                <li>
+                  <strong>Design Excellence:</strong> Our talented designers draw inspiration from nature, art, and culture to create pieces that are both beautiful and meaningful.
+                </li>
+                <li>
+                  <strong>Customer Engagement: :</strong> We actively engage with our customers, listening to their stories and incorporating their feedback into our designs.
+                </li>
+                <li>
+                  <strong>Ethical Practices:</strong> We prioritize ethical sourcing of materials, working with suppliers who share our commitment to environmental and social responsibility.
+                </li>
+                <li>
+                  <strong>Community Building: </strong> We create opportunities for our customers to connect with each other through exclusive events, social media, and collaborative projects.
+                </li>
+              </ul>
+            </div>
+          </div>
 
-        <p>In conclusion, jewelry is a powerful tool for self-expression and emotional reflection. By understanding the psychology behind our accessory choices, we can use jewelry not just to enhance our outfits, but also to communicate our personality and mood to the world.</p>
-      </div>
-    </article>
-  </div>
-  )
+          <p>
+            In conclusion, As we continue to grow and innovate, we remain focused on creating a world where elegance and connection are celebrated through our timeless pieces. We invite you to join us on this journey, to be a part of The Ukoo family, and to share in the joy and beauty that our jewelry brings.
+          </p>
+        </div>
+      </article>
+    </div>
+  );
 }
