@@ -3,8 +3,9 @@ import Logo from "../components/Header/Logo";
 import NavMenu from "../components/Header/NavMenu";
 import OffcanvasMenu from "../components/Header/OffcanvasMenu";
 import OffcanvasToggleButton from "../components/Header/OffcanvasToggleButton";
-// import "../css/Header.scss";
-import "../css/Navbar.scss";
+import "../css/Header.scss";
+import "../css/NavMenu.scss";
+
 
 
 const Header = () => {
@@ -26,11 +27,11 @@ const Header = () => {
   return (
     <header>
       <nav className={`navbar fixed-top navbar-expand-lg ${scrolled ? 'navbar-scrolled' : 'navbar-transparent'}`}>
-        <div className="container">
+        <div className="container-fluid">
           <Logo scrolled={scrolled}/>
           <NavMenu />
-        </div>
         <OffcanvasToggleButton scrolled={scrolled} />
+        </div>
         <OffcanvasMenu />
       </nav>
     </header>

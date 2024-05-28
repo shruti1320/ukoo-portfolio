@@ -4,7 +4,7 @@ import uku2 from "../../images/Banner/uku2.jpg";
 export default function Blog_2() {
   return (
     <div>
-      <div className="container">
+      <div className="container1">
         <article className="blog-post">
           <h1>Beach Photography Tips: Capturing Stunning Moments by the Shore</h1>
           <div className="post-meta">

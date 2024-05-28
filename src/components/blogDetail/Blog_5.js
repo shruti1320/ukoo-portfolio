@@ -4,7 +4,7 @@ import "../../css/Blog.css"
 
 export default function Blog_5() {
   return (
-    <div className="container">
+    <div className="container1">
       <article className="blog-post">
         <h1 className="blog-title">"Sunset Serenity: Experiencing the Magic of a Desert Safari at Dusk"</h1>
         <div className="post-meta">

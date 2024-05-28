@@ -4,7 +4,7 @@ import uku3 from "../../images/Banner/uku.jpg";
 export default function Blog_3() {
   return (
     <div>
-      <div className="container">
+      <div className="container1">
         <article className="blog-post">
           <h1>Creative Portrait Photography: Techniques for Capturing Personality and Expression</h1>
           <div className="post-meta">

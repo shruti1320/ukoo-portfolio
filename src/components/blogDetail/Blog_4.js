@@ -3,7 +3,7 @@ import uku4 from "../../images/Banner/uku8.jpeg";
 
 export default function Blog_4() {
   return (
-    <div className="container">
+    <div className="container1">
       <article className="blog-post">
         <h1>Festival Fashion: Traditional Attire and Modern Trends:</h1>
         <div className="post-meta">

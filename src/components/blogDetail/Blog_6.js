@@ -3,7 +3,7 @@ import uku6 from "../../images/Banner/uku22.jpeg";
 
 export default function Blog_6() {
   return (
-    <div className="container">
+    <div className="container1">
       <article className="blog-post">
         <h1>Winter Wonderland: Exploring the Magic of Snowy Destinations</h1>
         <div className="post-meta">

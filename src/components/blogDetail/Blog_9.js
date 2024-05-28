@@ -4,7 +4,7 @@ import uku from "../../images/Banner/u-3.jpg";
 
 export default function Blog_9() {
   return (
-    <div className="container">
+    <div className="container1">
       <article className="blog-post">
         <h1 className="post-title">
           The Importance of Rituals in Hinduism: Connecting with the Divine

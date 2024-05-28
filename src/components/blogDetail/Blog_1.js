@@ -4,7 +4,7 @@ import uku1 from "../../images/Banner/uku13.jpeg";
 
 export default function Blog_1() {
   return (
-    <div className="container">
+    <div className="container1">
       <article className="blog-post">
         <h1 className="post-title">
           Our Mission and Vision: What Drives The Ukoo
