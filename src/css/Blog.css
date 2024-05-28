@@ -1,11 +1,10 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&family=Roboto+Slab:wght@700&display=swap');
 
 .container1 {
   margin: 0 auto;
   padding: 20px;
   font-family: 'Arial, sans-serif';
-  animation: containerFadeIn 1s forwards; 
+  animation: containerFadeIn 1s forwards;
 }
 
 @keyframes containerFadeIn {
@@ -15,25 +14,25 @@
 }
 
 .blog-post {
-  color: #333;
-  color:#F2F2F1;
+  color: #F2F2F1;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
   margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Transparent dark background */
 }
 
 .blog-post h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5em;
-  color: #fff; 
+  color: #fff;
   margin-bottom: 10px;
-  padding: 20px; 
-  border-radius: 10px; 
+  padding: 20px;
+  border-radius: 10px;
   background: linear-gradient(135deg, #6a11cb, #2575fc); 
-  background-clip: text; 
-  -webkit-background-clip: text; 
-  -webkit-text-fill-color: transparent; 
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   animation: fadeInUp 1s 1s forwards;
 }
@@ -53,7 +52,7 @@
   font-size: 0.9em;
   color: #7f8c8d;
   opacity: 0;
-  animation: fadeInUp 1s 2s forwards; 
+  animation: fadeInUp 1s 2s forwards;
   margin-bottom: 10px;
 }
 
@@ -66,7 +65,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   opacity: 0;
-  animation: fadeIn 1s forwards; 
+  animation: fadeIn 1s forwards;
 }
 
 @keyframes fadeIn {
@@ -79,15 +78,16 @@
   line-height: 1.6;
   font-size: 1.1em;
   opacity: 0;
-  animation: fadeInUp 1s 1s forwards; 
+  animation: fadeInUp 1s 1s forwards;
   margin-top: 20px;
 }
 
 .post-content h2 {
-  font-family: 'Roboto', sans-serif; 
-  background: linear-gradient(90deg, #3d31a8, #8e7af1); /* Apply gradient background */
-  -webkit-background-clip: text; /* Clip the background to the text */
-  -webkit-text-fill-color: transparent; /* Make the text color transparent */
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(90deg, #333399, #cc99ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff; /* Fallback color */
   margin-top: 20px;
 }
 
@@ -104,10 +104,11 @@
 }
 
 .post-content ul li strong {
-  font-family: 'Roboto Slab', serif; 
-  background: linear-gradient(90deg, #9997e6, #4a3db9); /* Apply gradient background */
-  -webkit-background-clip: text; /* Clip the background to the text */
-  -webkit-text-fill-color: transparent; /* Make the text color transparent */
+  font-family: 'Roboto Slab', serif;
+  background: linear-gradient(90deg, #3366ff, #6666ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff; /* Fallback color */
 }
 
 .post-content p:last-of-type {
@@ -115,7 +116,7 @@
 }
 
 @media (max-width: 600px) {
-  .container {
+  .container1 {
     padding: 15px;
   }
 
@@ -135,15 +136,14 @@
 }
 
 .post-column {
-  flex: 1 1 50%; /* Two columns */
+  flex: 1 1 50%;
 }
 
 @media (max-width: 768px) {
   .post-column {
-    flex: 1 1 100%; /* One column on small screens */
+    flex: 1 1 100%;
   }
 }
-
 
 .intro {
   margin-bottom: 20px;
@@ -152,7 +152,7 @@
 .sub-heading {
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color: #fff; /* Ensure sub-headings are white */
   margin-top: 30px;
   margin-bottom: 10px;
 }

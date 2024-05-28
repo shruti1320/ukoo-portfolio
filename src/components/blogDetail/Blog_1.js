@@ -6,6 +6,7 @@ export default function Blog_1() {
   return (
     <div className="container1">
       <article className="blog-post">
+      {/* <i class="fa-solid fa-xmark"></i> */}
         <h1 className="post-title">
           Our Mission and Vision: What Drives The Ukoo
         </h1>

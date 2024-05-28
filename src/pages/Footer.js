@@ -51,12 +51,11 @@ const socialMediaLinks = [
     viewBoxWidth: 512,
     fill:"#c4302b",
   },
-  // Add other social media links here
 ];
 
 const Footer = () => {
   return (
-    <div className='bg-light text-center' style={{paddingTop:"100px", paddingBottom:"100px"}}>
+    <div className=' text-center' style={{paddingTop:"100px", paddingBottom:"100px"}}>
       <div className="container">
         <div className="row">
           <div className="col-md-12">
@@ -67,10 +66,6 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            {/* <p style={{color:"#696969", fontSize:"13px", textAlign:"center"}} className='text-center'>
-              © 2020 SriwijayaDigital. Made With Love By{" "}
-              AGT
-            </p> */}
           </div>
         </div>
       </div>
