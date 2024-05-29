@@ -9,7 +9,7 @@ const NavMenu = () => {
   };
 
   return (
-    <div className="collapse navbar-collapse" style={{ marginLeft: "50px" }}>
+    <div className="collapse navbar-collapse" style={{ marginRight: "60px" }}>
       <div className="navbar-nav ms-auto nav-menu">
         <ul className="navbar-nav nav-items">
           <li className="nav-item">

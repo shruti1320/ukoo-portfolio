@@ -17,11 +17,11 @@ import uku10 from "../images/Banner/uku26.jpg";
 import uku11 from "../images/Banner/uku28.jpg";
 import uku13 from "../images/Banner/uku30.jpg";
 import u1 from "../images/Uku_Banner/u1.jpeg"
-import "../css/Parallax1.scss";
+import "../scss/Parallax1.scss";
 import logob from "../images/Logo/b-vmake.jpeg";
-import "../css/Parallax1.css";
-import "../css/Scrollbar.scss";
-import "../css/Footer.scss";
+import "../scss/Parallax1.css";
+import "../scss/Scrollbar.scss";
+import "../scss/Footer.scss";
 import Modal from 'react-modal';
 import Blog_1 from "../components/blogDetail/Blog_1";
 import Blog_2 from "../components/blogDetail/Blog_2";
@@ -123,9 +123,9 @@ export default function Parallax1() {
         </ParallaxBannerLayer>
         <ParallaxBannerLayer>
         <div className="content-wrapper centered">
-            <div className="text-content text-white fs-4">The Ukoo</div>
-            <div className="text-content text-white fs-4">Persembahan Forum Teknologi Sumatera Selatan</div>
-            <div className="text-content text-white fs-4">Palembang, 28 - 29 November 2020</div>
+            <div className="text-content ">The Ukoo</div>
+            <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
+            <div className="text-content ">Palembang, 28 - 29 November 2020</div>
             <div><button type="button" className="btn1" onClick={()=>{openModal(1)}}>View more</button></div>
           </div>
         </ParallaxBannerLayer>
@@ -137,9 +137,9 @@ export default function Parallax1() {
         />
        <ParallaxBannerLayer>
           <div className="content-wrapper right-aligned">
-            <div className="text-content text-white fs-4">The Ukoo</div>
-            <div className="text-content text-white fs-4">Persembahan Forum Teknologi Sumatera Selatan</div>
-            <div className="text-content text-white fs-4">Palembang, 28 - 29 November 2020</div>
+            <div className="text-content ">The Ukoo</div>
+            <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
+            <div className="text-content ">Palembang, 28 - 29 November 2020</div>
             <div><button type="button" className="btn1" onClick={()=>{openModal(2)}}>View more</button></div>
           </div>
         </ParallaxBannerLayer>
@@ -152,9 +152,9 @@ export default function Parallax1() {
         />
         <ParallaxBannerLayer>
         <div className="content-wrapper left-aligned">
-            <div className="text-content fs-4">The Ukoo</div>
-            <div className="text-content fs-4">Persembahan Forum Teknologi Sumatera Selatan</div>
-            <div className="text-content fs-4">Palembang, 28 - 29 November 2020</div>
+            <div className="text-content ">The Ukoo</div>
+            <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
+            <div className="text-content ">Palembang, 28 - 29 November 2020</div>
             <div><button type="button" className="btn1"  onClick={()=>{openModal(8)}}>View more</button></div>
           </div>
         </ParallaxBannerLayer>
@@ -166,9 +166,9 @@ export default function Parallax1() {
         />
          <ParallaxBannerLayer>
         <div className="content-wrapper right-aligned">
-            <div className="text-content fs-4">The Ukoo</div>
-            <div className="text-content  fs-4">Persembahan Forum Teknologi Sumatera Selatan</div>
-            <div className="text-content  fs-4">Palembang, 28 - 29 November 2020</div>
+            <div className="text-content ">The Ukoo</div>
+            <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
+            <div className="text-content ">Palembang, 28 - 29 November 2020</div>
             <div><button type="button" className="btn1"  onClick={()=>{openModal(7)}}>View more</button></div>
           </div>
         </ParallaxBannerLayer>
@@ -179,9 +179,9 @@ export default function Parallax1() {
         />
           <ParallaxBannerLayer>
         <div className="content-wrapper left-aligned">
-            <div className="text-content fs-4">The Ukoo</div>
-            <div className="text-content fs-4">Persembahan Forum Teknologi Sumatera Selatan</div>
-            <div className="text-content fs-4">Palembang, 28 - 29 November 2020</div>
+            <div className="text-content ">The Ukoo</div>
+            <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
+            <div className="text-content ">Palembang, 28 - 29 November 2020</div>
             <div><button type="button" className="btn1"  onClick={()=>{openModal(6)}}>View more</button></div>
           </div>
         </ParallaxBannerLayer>
@@ -193,9 +193,9 @@ export default function Parallax1() {
         />
         <ParallaxBannerLayer>
         <div className="content-wrapper right-aligned">
-            <div className="text-content text-white fs-4">The Ukoo</div>
-            <div className="text-content text-white fs-4">Persembahan Forum Teknologi Sumatera Selatan</div>
-            <div className="text-content text-white fs-4">Palembang, 28 - 29 November 2020</div>
+            <div className="text-content ">The Ukoo</div>
+            <div className="text-content">Persembahan Forum Teknologi Sumatera Selatan</div>
+            <div className="text-content ">Palembang, 28 - 29 November 2020</div>
             <div><button type="button" className="btn1"  onClick={()=>{openModal(9)}}>View more</button></div>
           </div>
         </ParallaxBannerLayer>
@@ -207,9 +207,9 @@ export default function Parallax1() {
         />
         <ParallaxBannerLayer>
         <div className="content-wrapper left-aligned">
-            <div className="text-content text-white fs-4">The Ukoo</div>
-            <div className="text-content text-white fs-4">Persembahan Forum Teknologi Sumatera Selatan</div>
-            <div className="text-content text-white fs-4">Palembang, 28 - 29 November 2020</div>
+            <div className="text-content">The Ukoo</div>
+            <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
+            <div className="text-content">Palembang, 28 - 29 November 2020</div>
             <div><button type="button" className="btn1"  onClick={()=>{openModal(3)}}>View more</button></div>
           </div>
         </ParallaxBannerLayer>
@@ -221,9 +221,9 @@ export default function Parallax1() {
         />
         <ParallaxBannerLayer>
         <div className="content-wrapper right-aligned">
-            <div className="text-content text-white fs-4">The Ukoo</div>
-            <div className="text-content text-white fs-4">Persembahan Forum Teknologi Sumatera Selatan</div>
-            <div className="text-content text-white fs-4">Palembang, 28 - 29 November 2020</div>
+            <div className="text-content ">The Ukoo</div>
+            <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
+            <div className="text-content ">Palembang, 28 - 29 November 2020</div>
             <div><button type="button" className="btn1"  onClick={()=>{openModal(5)}}>View more</button></div>
           </div>
         </ParallaxBannerLayer>
@@ -235,9 +235,9 @@ export default function Parallax1() {
         />
           <ParallaxBannerLayer>
         <div className="content-wrapper left-aligned">
-            <div className="text-content fs-4">The Ukoo</div>
-            <div className="text-content fs-4">Persembahan Forum Teknologi Sumatera Selatan</div>
-            <div className="text-content fs-4">Palembang, 28 - 29 November 2020</div>
+            <div className="text-content ">The Ukoo</div>
+            <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
+            <div className="text-content">Palembang, 28 - 29 November 2020</div>
             <div><button type="button" className="btn1"  onClick={()=>{openModal(4)}}>View more</button></div>
           </div>
         </ParallaxBannerLayer>

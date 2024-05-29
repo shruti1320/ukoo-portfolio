@@ -1,7 +1,7 @@
 // Footer.js
 import React from 'react';
 import SocialMediaIcon from '../components/Footer/SocialMediaIcon';
-import "../css/Footer.scss";
+import "../scss/Footer.scss";
 
 const socialMediaLinks = [
   {

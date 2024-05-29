@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../css/Gallery.scss"; // Optional for additional styling
+import "../scss/Gallery.scss"; // Optional for additional styling
 import uku_gallery1 from "../images/Gallery/uku_gallery1.jpg";
 import uku_gallery2 from "../images/Gallery/uku_gallery2.jpg";
 import uku_gallery3 from "../images/Gallery/uku_gallery3.jpg";

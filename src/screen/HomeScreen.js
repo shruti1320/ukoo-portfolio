@@ -8,7 +8,7 @@ export default function HomeScreen() {
     <div>
       <Header />
       <Parallax1 />
-      <Gallery/>
+      {/* <Gallery/> */}
       {/* <Footer/> */}
     </div>
   );
