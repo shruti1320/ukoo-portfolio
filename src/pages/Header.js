@@ -4,6 +4,7 @@ import NavMenu from "../components/Header/NavMenu";
 import OffcanvasMenu from "../components/Header/OffcanvasMenu";
 import "../scss/Header.scss";
 import "../scss/NavMenu.scss";
+
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
@@ -28,6 +29,7 @@ const Header = () => {
         }`}
       >
         <div className="container">
+
         <Logo scrolled={scrolled} />
         <div
           className={`navbar-toggler btn  btn-no-border ${scrolled ? 'text-black' : 'text-white'}`}
@@ -53,21 +55,3 @@ const Header = () => {
   );
 };
 export default Header;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

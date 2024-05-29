@@ -9,12 +9,12 @@ const NavMenu = () => {
   };
 
   return (
-    <div className="collapse navbar-collapse" style={{ marginRight: "60px" }}>
-      <div className="navbar-nav ms-auto nav-menu">
+    <div className="collapse navbar-collapse"  style={{marginRight:"60px"}}>
+      <div className="navbar-nav nav-menu">
         <ul className="navbar-nav nav-items">
           <li className="nav-item">
             <a className="nav-link" onClick={() => scrollToSection("banner1")} href="#home">
-              Ukoo - The Brand
+              The Brand
             </a>
           </li>
           <li className="nav-item">
@@ -42,11 +42,11 @@ const NavMenu = () => {
               Animal Lover
             </a>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <a className="nav-link" onClick={() => scrollToSection("banner10")} href="#gallery">
               Gallery
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

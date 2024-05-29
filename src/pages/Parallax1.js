@@ -17,7 +17,7 @@ import uku10 from "../images/Banner/uku26.jpg";
 import uku11 from "../images/Banner/uku28.jpg";
 import uku13 from "../images/Banner/uku30.jpg";
 import u1 from "../images/Uku_Banner/u1.jpeg"
-import "../scss/Parallax1.scss";
+// import "../scss/Parallax1.scss";
 import logob from "../images/Logo/b-vmake.jpeg";
 import "../scss/Parallax1.css";
 import "../scss/Scrollbar.scss";
@@ -115,10 +115,14 @@ export default function Parallax1() {
   {modalContent===9&&<Blog_9 />}
   <button type="button" className="modalCloseButton" onClick={()=>{closeModal()}}><i class="fa-solid fa-xmark"></i></button>
 </Modal>
-      <ParallaxBanner className="banner1">
+
+
+   <div>
+      <ParallaxBanner id="banner1" style={{ width:"100%", top: "0" , height: "100vh" }}>
         <ParallaxBannerLayer
           image={uku1}
-          translateY={[18, -10]}
+          className="banner1"
+          style={{top:"0px"}}
         >
         </ParallaxBannerLayer>
         <ParallaxBannerLayer>
@@ -127,13 +131,18 @@ export default function Parallax1() {
             <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
             <div className="text-content ">Palembang, 28 - 29 November 2020</div>
             <div><button type="button" className="btn1" onClick={()=>{openModal(1)}}>View more</button></div>
-          </div>
+        </div>
         </ParallaxBannerLayer>
         </ParallaxBanner>
-      <ParallaxBanner className="banner1">
+        </div>
+
+      <ParallaxBanner  id="banner2"
+        style={{ width:"100%", height: "100vh" }}>
         <ParallaxBannerLayer
           image={uku2}
-          translateY={[-35, 25]}
+          className="banner1"
+          speed={35}
+            scale={[1, 1]}
         />
        <ParallaxBannerLayer>
           <div className="content-wrapper right-aligned">
@@ -144,11 +153,16 @@ export default function Parallax1() {
           </div>
         </ParallaxBannerLayer>
       </ParallaxBanner>
-      <ParallaxBanner className="banner1">
+
+
+      <ParallaxBanner  id="banner3"
+        style={{ width:"100%", top: "0" , height: "100vh" }}>
         <ParallaxBannerLayer
           image={uku8}
           expanded={true}
-          translateY={[-10, 30]}
+          className="banner1"
+          speed={10}
+            scale={[1, 1]}
         />
         <ParallaxBannerLayer>
         <div className="content-wrapper left-aligned">
@@ -159,10 +173,15 @@ export default function Parallax1() {
           </div>
         </ParallaxBannerLayer>
       </ParallaxBanner>
-      <ParallaxBanner className="banner1">
+
+
+      <ParallaxBanner id="banner4"
+        style={{ width:"100%", top: "0" , height: "100vh" }}>
         <ParallaxBannerLayer
           image={uku7}
-          translateY={[-20, 25]}
+          className="banner1"
+          speed={25}
+          scale={[1, 1]}
         />
          <ParallaxBannerLayer>
         <div className="content-wrapper right-aligned">
@@ -173,9 +192,12 @@ export default function Parallax1() {
           </div>
         </ParallaxBannerLayer>
         </ParallaxBanner>
-      <ParallaxBanner className="banner1">
+
+      <ParallaxBanner id="banner5"  style={{ width:"100%", top: "0" , height: "100vh" }}>
         <ParallaxBannerLayer image={uku6}
-         translateY={[-25, 55]}
+          speed={25}
+          className="banner1"
+          scale={[1, 1]}
         />
           <ParallaxBannerLayer>
         <div className="content-wrapper left-aligned">
@@ -186,10 +208,14 @@ export default function Parallax1() {
           </div>
         </ParallaxBannerLayer>
         </ParallaxBanner>
-      <ParallaxBanner className="banner1">
+
+
+      <ParallaxBanner id="banner6"  style={{ width:"100%", top: "0" , height: "100vh" }}>
         <ParallaxBannerLayer
           image={uku9}
-         translateY={[-15,25]}
+          className="banner1"
+          speed={15}
+          scale={[1, 1]}
         />
         <ParallaxBannerLayer>
         <div className="content-wrapper right-aligned">
@@ -200,10 +226,14 @@ export default function Parallax1() {
           </div>
         </ParallaxBannerLayer>
         </ParallaxBanner>
-      <ParallaxBanner className="banner1">
+
+
+      <ParallaxBanner id="banner7"  style={{ width:"100%", top: "0" , height: "100vh" }}>
         <ParallaxBannerLayer
           image={uku3}
-          translateY={[-25, 40]}
+          className="banner1"
+          speed={25}
+          scale={[1, 1]}
         />
         <ParallaxBannerLayer>
         <div className="content-wrapper left-aligned">
@@ -214,10 +244,13 @@ export default function Parallax1() {
           </div>
         </ParallaxBannerLayer>
         </ParallaxBanner>
-      <ParallaxBanner className="banner1">
-        <ParallaxBannerLayer
+
+
+      <ParallaxBanner id="banner8"  style={{ width:"100%", top: "0" , height: "100vh" }}>        <ParallaxBannerLayer
           image={uku10}
-          translateY={[-25, 25]}
+          className="banner1"
+          speed={15}
+          scale={[1, 1]}
         />
         <ParallaxBannerLayer>
         <div className="content-wrapper right-aligned">
@@ -228,10 +261,13 @@ export default function Parallax1() {
           </div>
         </ParallaxBannerLayer>
         </ParallaxBanner>
-      <ParallaxBanner className="banner1">
-        <ParallaxBannerLayer
+
+
+      <ParallaxBanner id="banner9"  style={{ width:"100%", top: "0" , height: "100vh" }}>        <ParallaxBannerLayer
           image={uku11}
-          translateY={[-15, 30]}
+          className="banner1"
+          speed={15}
+          scale={[1, 1]}
         />
           <ParallaxBannerLayer>
         <div className="content-wrapper left-aligned">
@@ -242,10 +278,14 @@ export default function Parallax1() {
           </div>
         </ParallaxBannerLayer>
         </ParallaxBanner>
-        <ParallaxBanner className="banner2">
+
+
+        <ParallaxBanner id="banner10" className="banner2">
          <ParallaxBannerLayer
           image={logob}
-          translateY={[-25, 25]}
+          speed={15}
+          scale={[1, 1]}
+          translateY={[-1, 15]}
         />
           <ParallaxBannerLayer>
        <div className="footer-container">
