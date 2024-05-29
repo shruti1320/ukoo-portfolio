@@ -1,0 +1,99 @@
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 20px; 
+}
+
+
+
+.content-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text-content {
+  color: black;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+
+.btn1 {
+  color: white;
+  padding: 10px 20px;
+  border-color: white;
+  background: transparent;
+  border-radius: 50px;
+  font-size: 14px;
+  margin-top: 20px;
+  line-height: 1.8em;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.banner1{
+  display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+@media screen and (max-width: 768px) {
+
+  .text-content {
+    font-size: 1.3rem; 
+   
+  }
+
+  .btn1 {
+    font-size: 1rem; 
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #banner1 , #banner2, #banner3, #banner4 , #banner5 , #banner6 , #banner7, #banner8 , #banner9 , #banner10 {
+    width: 100%; 
+    
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .btn1 {
+    flex-direction: column;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  .btn1 {
+    margin-top: 5px;
+  }
+}

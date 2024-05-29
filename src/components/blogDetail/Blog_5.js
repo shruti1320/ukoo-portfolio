@@ -1,6 +1,6 @@
 import React from 'react';
 import uku5 from "../../images/Banner/uku26.jpg";
-import "../../css/Blog.css"
+import "../../scss/Blog.css"
 
 export default function Blog_5() {
   return (

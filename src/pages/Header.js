@@ -2,9 +2,8 @@ import React, { useEffect, useState } from "react";
 import Logo from "../components/Header/Logo";
 import NavMenu from "../components/Header/NavMenu";
 import OffcanvasMenu from "../components/Header/OffcanvasMenu";
-import OffcanvasToggleButton from "../components/Header/OffcanvasToggleButton";
-import "../css/Header.scss";
-import "../css/NavMenu.scss";
+import "../scss/Header.scss";
+import "../scss/NavMenu.scss";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -29,6 +28,8 @@ const Header = () => {
           scrolled ? "navbar-scrolled" : "navbar-transparent"
         }`}
       >
+        <div className="container">
+
         <Logo scrolled={scrolled} />
         <div
           className={`navbar-toggler btn  btn-no-border ${scrolled ? 'text-black' : 'text-white'}`}
@@ -39,7 +40,6 @@ const Header = () => {
           aria-controls="offcanvasRight"
           style={{ border: "none" }}
           data-target="#navbarSupportedContent"
-          // aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
@@ -48,8 +48,7 @@ const Header = () => {
     </svg>
         </div>
         <NavMenu />
-        {/* <OffcanvasToggleButton scrolled={scrolled} /> */}
-
+        </div>
         <OffcanvasMenu />
       </nav>
     </header>

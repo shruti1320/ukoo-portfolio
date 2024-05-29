@@ -1,6 +1,6 @@
 // CopyrightText.js
 import React from 'react';
-import "../css/Footer.scss";
+import "../scss/Footer.scss";
 
 const CopyrightText = () => {
   return (

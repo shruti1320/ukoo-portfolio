@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../css/Footer.scss";
+import "../../scss/Footer.scss";
 
 const SocialMediaIcon = ({ href, svgPath, width, height, viewBoxHeight, fill, viewBoxWidth }) => {
   return (

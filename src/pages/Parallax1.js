@@ -17,11 +17,11 @@ import uku10 from "../images/Banner/uku26.jpg";
 import uku11 from "../images/Banner/uku28.jpg";
 // import uku13 from "../images/Banner/uku30.jpg";
 // import u1 from "../images/Uku_Banner/u1.jpeg";
-import "../css/Parallax1.scss";
+import "../scss/Parallax1.scss";
 import logob from "../images/Logo/b-vmake.jpeg";
-import "../css/Parallax1.css";
-import "../css/Scrollbar.scss";
-import "../css/Footer.scss";
+import "../scss/Parallax1.css";
+import "../scss/Scrollbar.scss";
+import "../scss/Footer.scss";
 import Modal from "react-modal";
 import Blog_1 from "../components/blogDetail/Blog_1";
 import Blog_2 from "../components/blogDetail/Blog_2";
@@ -39,7 +39,7 @@ const customStyles = {
   overlay: {
     backgroundColor: "rgba(0, 0, 0, 0.75)", // Darker overlay for a more dramatic effect
     zIndex: 1000,
-    transition: "opacity 20s ease-in-out", // Smooth transition for overlay
+    transition: "opacity 0.5s ease-in-out", // Smooth transition for overlay
   },
   content: {
     top: "50%",
@@ -57,8 +57,8 @@ const customStyles = {
     boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)", // Deeper shadow for more depth
     background: "linear-gradient(135deg, #ffffff, #f1f1f1)", // Light gradient background
     padding: "20px",
-    transition: "opacity 20s ease-in-out", // Smooth transition for content appearance
-    animation: "modalFadeIn 20s, gradientChange 20s infinite alternate", // Fade-in animation for the modal and continuous gradient change
+    transition: "opacity 0.5s ease-in-out", // Smooth transition for content appearance
+    animation: "modalFadeIn 0.5s, gradientChange 10s infinite alternate", // Fade-in animation for the modal and continuous gradient change
     // Gradient color for title and paragraph
     color: "white", // Make text transparent to apply gradient
     WebkitBackgroundClip: "text", // Apply gradient to text
@@ -100,6 +100,7 @@ export default function Parallax1() {
     setModalContent(null);
     setModalIsOpen(false);
   };
+
   return (
     <>
       <Modal
@@ -119,44 +120,59 @@ export default function Parallax1() {
         {modalContent === 9 && <Blog_9 />}
       </Modal>
 
-      <ParallaxBanner id="banner1" style={{ aspectRatio: "2/ 1" }}>
-        <ParallaxBannerLayer
-          image={uku1}
-          className="banner1"
-          translateY={[18, -10]}
-        ></ParallaxBannerLayer>
-        <ParallaxBannerLayer>
-          <div className="content-wrapper">
-            <div className="text-content text-white "><strong>The Ukoo</strong></div>
-            <div className="text-content text-white ">
-            Crafting Beauty, Inspiring Confidence
+      <div>
+        <ParallaxBanner id="banner1" style={{ width:"100%", top: "0" , height: "100vh" }}>
+          <ParallaxBannerLayer
+            image={uku1}
+            className="banner1"
+            speed={15}
+            scale={[1, 1]}
+            style={{top:"0px"}}
+            // translateY={[18, -10]}
+            // style={{transition: "transform 0.5s ease"}}
+          ></ParallaxBannerLayer>
+          <ParallaxBannerLayer>
+            <div className="content-wrapper">
+              <div className="text-content text-white ">
+                <strong>The Ukoo</strong>
+              </div>
+              <div className="text-content text-white ">
+                Crafting Beauty, Inspiring Confidence
+              </div>
+              <div className="text-content text-white ">
+                A World of Elegance and Connection
+              </div>
+              <div>
+                <button
+                  type="button"
+                  className="btn1"
+                  onClick={() => {
+                    openModal(1);
+                  }}
+                >
+                  View more
+                </button>
+              </div>
             </div>
-            <div className="text-content text-white ">
-            A World of Elegance and Connection
-            </div>
-            <div>
-              <button
-                type="button"
-                className="btn1"
-                onClick={() => {
-                  openModal(1);
-                }}
-              >
-                View more
-              </button>
-            </div>
-          </div>
-        </ParallaxBannerLayer>
-      </ParallaxBanner>
+          </ParallaxBannerLayer>
+        </ParallaxBanner>
+      </div>
 
-      <ParallaxBanner id="banner2" style={{ aspectRatio: "2 / 1" }}>
+      <ParallaxBanner
+        id="banner2"
+        style={{ width:"100%", height: "100vh" }}
+      >
         <ParallaxBannerLayer
           image={uku2}
-          className="banner7"
-          translateY={[-35, 25]}
+          className="banner1"
+          speed={35}
+            scale={[1, 1]}
+            // style={{top:"0px"}}
+          // translateY={[-35, 25]}
+          // style={{transition: "transform 0.5s ease"}}
         />
         <ParallaxBannerLayer>
-          <div className="content-wrapper" style={{alignItems:"flex-start"}}>
+          <div className="content-wrapper" style={{ alignItems: "flex-start" }}>
             <div className="text-content text-white fs-4">The Ukoo</div>
             <div className="text-content text-white fs-4">
               Persembahan Forum Teknologi Sumatera Selatan
@@ -179,15 +195,21 @@ export default function Parallax1() {
         </ParallaxBannerLayer>
       </ParallaxBanner>
 
-      <ParallaxBanner id="banner3" style={{ aspectRatio: "2 / 1" }}>
+      <ParallaxBanner
+        id="banner3"
+        style={{ width:"100%", top: "0" , height: "100vh" }}
+      >
         <ParallaxBannerLayer
           image={uku8}
           expanded={true}
-          className="banner3"
-          translateY={[-10, 30]}
+          className="banner1"
+          speed={10}
+            scale={[1, 1]}
+          // translateY={[-10, 30]}
+          // style={{transition: "transform 0.5s ease"}}
         />
         <ParallaxBannerLayer>
-          <div className="content-wrapper" style={{alignItems:"flex-end"}}>
+          <div className="content-wrapper" style={{ alignItems: "flex-end" }}>
             <div className="text-content  fs-4"> The Ukoo</div>
             <div className="text-content  fs-4">
               Persembahan Forum Teknologi Sumatera Selatan
@@ -210,14 +232,20 @@ export default function Parallax1() {
         </ParallaxBannerLayer>
       </ParallaxBanner>
 
-      <ParallaxBanner id="banner4" style={{ aspectRatio: "2 / 1" }}>
+      <ParallaxBanner
+        id="banner4"
+        style={{ width:"100%", top: "0" , height: "100vh" }}
+      >
         <ParallaxBannerLayer
           image={uku7}
-          className="banner4"
-          translateY={[-20, 25]}
+          className="banner1"
+          speed={25}
+          scale={[1, 1]}
+          // translateY={[-20, 25]}
+          // style={{transition: "transform 0.5s ease"}}
         />
         <ParallaxBannerLayer>
-          <div className="content-wrapper" style={{alignItems:"flex-start"}}>
+          <div className="content-wrapper" style={{ alignItems: "flex-start" }}>
             <div className="text-content text-primary fs-4">The Ukoo</div>
             <div className="text-content text-primary fs-4">
               Persembahan Forum Teknologi Sumatera Selatan
@@ -240,10 +268,17 @@ export default function Parallax1() {
         </ParallaxBannerLayer>
       </ParallaxBanner>
 
-      <ParallaxBanner id="banner5" style={{ aspectRatio: "2 / 1" }}>
-        <ParallaxBannerLayer image={uku6} translateY={[-25, 55]} />
+      <ParallaxBanner id="banner5"  style={{ width:"100%", top: "0" , height: "100vh" }}>
+        <ParallaxBannerLayer
+          image={uku6}
+          speed={25}
+          className="banner1"
+          scale={[1, 1]}
+          // translateY={[-25, 55]}
+          // style={{ transition: "transform 0.5s ease" }}
+        />
         <ParallaxBannerLayer>
-          <div className="content-wrapper" style={{alignItems:"flex-end"}}>
+          <div className="content-wrapper" style={{ alignItems: "flex-end" }}>
             <div className="text-content fs-4">The Ukoo</div>
             <div className="text-content fs-4">
               Persembahan Forum Teknologi Sumatera Selatan
@@ -266,14 +301,16 @@ export default function Parallax1() {
         </ParallaxBannerLayer>
       </ParallaxBanner>
 
-      <ParallaxBanner id="banner6" style={{ aspectRatio: "2 / 1" }}>
+      <ParallaxBanner id="banner6"  style={{ width:"100%", top: "0" , height: "100vh" }}>
         <ParallaxBannerLayer
           image={uku9}
-          className="banner9"
-          translateY={[-15, 25]}
+          className="banner1"
+          speed={15}
+          scale={[1, 1]}
+         
         />
         <ParallaxBannerLayer>
-          <div className="content-wrapper" style={{alignItems:"flex-start"}}>
+          <div className="content-wrapper" style={{ alignItems: "flex-start" }}>
             <div className="text-content  fs-2">The Ukoo</div>
             <div className="text-content  fs-4">
               Persembahan Forum Teknologi Sumatera Selatan
@@ -296,15 +333,16 @@ export default function Parallax1() {
         </ParallaxBannerLayer>
       </ParallaxBanner>
 
-      <ParallaxBanner id="banner7" style={{ aspectRatio: "2 / 1" }}>
+      <ParallaxBanner id="banner7"  style={{ width:"100%", top: "0" , height: "100vh" }}>
         <ParallaxBannerLayer
           image={uku3}
-          className="banner8"
-          translateY={[-25, 40]}
+          className="banner1"
+          speed={25}
+          scale={[1, 1]}
         />
         <ParallaxBannerLayer>
-          <div className="content-wrapper" style={{alignItems:"flex-start"}}>
-            <div className="text-content text-white fs-4">The Ukoo</div>
+          <div className="content-wrapper" style={{ alignItems: "flex-start" }}>
+            <div className="text-content text-white fs-4">The Uikikoo</div>
             <div className="text-content text-white fs-4">
               Persembahan Forum Teknologi Sumatera Selatan
             </div>
@@ -326,14 +364,15 @@ export default function Parallax1() {
         </ParallaxBannerLayer>
       </ParallaxBanner>
 
-      <ParallaxBanner id="banner8" style={{ aspectRatio: "2 / 1" }}>
+      <ParallaxBanner id="banner8"  style={{ width:"100%", top: "0" , height: "100vh" }}>
         <ParallaxBannerLayer
           image={uku10}
-          className="banner7"
-          translateY={[-25, 25]}
+          className="banner1"
+          speed={15}
+          scale={[1, 1]}
         />
         <ParallaxBannerLayer>
-          <div className="content-wrapper" style={{alignItems:"flex-end"}}>
+          <div className="content-wrapper" style={{ alignItems: "flex-end" }}>
             <div className="text-content text-white fs-4">The Ukoo</div>
             <div className="text-content text-white fs-4">
               Persembahan Forum Teknologi Sumatera Selatan
@@ -356,14 +395,15 @@ export default function Parallax1() {
         </ParallaxBannerLayer>
       </ParallaxBanner>
 
-      <ParallaxBanner id="banner9" style={{ aspectRatio: "2 / 1" }}>
+      <ParallaxBanner id="banner9"  style={{ width:"100%", top: "0" , height: "100vh" }}>
         <ParallaxBannerLayer
           image={uku11}
-          className="banner6"
-          translateY={[-15, 30]}
+          className="banner1"
+          speed={15}
+          scale={[1, 1]}
         />
         <ParallaxBannerLayer>
-          <div className="content-wrapper" style={{alignItems:"flex-end"}}>
+          <div className="content-wrapper" style={{ alignItems: "flex-end" }}>
             <div className="text-content text-white fs-4">The Ukoo</div>
             <div className="text-content text-white fs-4">
               Persembahan Forum Teknologi Sumatera Selatan
@@ -386,24 +426,23 @@ export default function Parallax1() {
         </ParallaxBannerLayer>
       </ParallaxBanner>
 
-      <ParallaxBanner id="banner10" style={{ aspectRatio: "2 / 1" }}>
+      <ParallaxBanner id="banner10"  style={{ width:"100%", top: "0" , height: "100vh" }}>
         <ParallaxBannerLayer
           image={logob}
-          className="banner6"
-          translateY={[-15, 30]}
+          className="banner1"
+          speed={15}
+          scale={[1, 1]}
         />
         <ParallaxBannerLayer>
-
-
-        <div
-          style={{
-            marginTop: "300px",
-            marginRight: "-190px",
-            height: "1100px",
-          }}
-        >
-          <Footer />
-        </div>
+          <div
+            style={{
+              marginTop: "300px",
+              marginRight: "-190px",
+              height: "1100px",
+            }}
+          >
+            <Footer />
+          </div>
         </ParallaxBannerLayer>
         <div className="copyright-text-container">
           <CopyrightText />

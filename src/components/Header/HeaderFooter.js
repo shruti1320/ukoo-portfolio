@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../css/Header.scss"
+import "../../scss/Header.scss"
 
 export default function HeaderFooter() {
   return (
