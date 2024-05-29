@@ -2,7 +2,7 @@ import React from "react";
 import "../../scss/Blog.css";
 import uku1 from "../../images/Banner/uku7.jpeg";
 
-export default function Blog_1() {
+export default function Blog_7() {
   return (
     <div className="container1">
       <article className="blog-post">

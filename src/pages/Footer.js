@@ -51,7 +51,6 @@ const socialMediaLinks = [
     viewBoxWidth: 512,
     fill:"#c4302b",
   },
-  // Add other social media links here
 ];
 
 const Footer = () => {
@@ -67,7 +66,6 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-           
           </div>
         </div>
       </div>
