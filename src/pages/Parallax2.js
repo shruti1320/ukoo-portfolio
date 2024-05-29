@@ -87,7 +87,7 @@ const customStyles = {
   },
 };
 
-export default function Parallax1() {
+export default function Parallax2() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalContent, setModalContent] = useState(null);
 
@@ -128,10 +128,10 @@ export default function Parallax1() {
           <ParallaxBannerLayer
             image={uku1}
             className="banner1"
-            speed={15}
+            // speed={15}
             scale={[1, 1]}
             style={{ top: "0px" }}
-            // translateY={[18, -10]}
+            translateY={[18, -10 , 'easeInQuint']}
             // style={{transition: "transform 0.5s ease"}}
           ></ParallaxBannerLayer>
           <ParallaxBannerLayer>
@@ -165,10 +165,10 @@ export default function Parallax1() {
         <ParallaxBannerLayer
           image={uku2}
           className="banner1"
-          speed={45}
-          scale={[1, 1]}
+        //   speed={45}
+        //   scale={[1, 1]}
           // style={{top:"0px"}}
-          // translateY={[-35, 25]}
+          translateY={[5, 25  , 'easeInQuint']}
           // style={{transition: "transform 0.5s ease"}}
         />
         <ParallaxBannerLayer>
@@ -197,15 +197,16 @@ export default function Parallax1() {
 
       <ParallaxBanner
         id="banner3"
-        style={{ width: "100%", top: "0", height: "100vh" }}
+        style={{ width: "100%"
+        , height: "100vh" }}
       >
         <ParallaxBannerLayer
           image={uku8}
           expanded={true}
           className="banner1"
-          speed={20}
+        //   speed={20}
           scale={[1, 1]}
-          // translateY={[-10, 30]}
+          translateY={[-10, 30 , 'easeInQuint']}
           // style={{transition: "transform 0.5s ease"}}
         />
         <ParallaxBannerLayer>
@@ -237,10 +238,10 @@ export default function Parallax1() {
           <ParallaxBannerLayer
             image={uku7}
             className="banner1"
-            speed={23}
+            // speed={23}
             // style={{}}
             scale={[1, 1]}
-            // translateY={[-20, 25]}
+            translateY={[-20, 25, 'easeInQuint']}
             // style={{transition: "transform 0.5s ease"}}
           />
           <ParallaxBannerLayer>
@@ -277,10 +278,10 @@ export default function Parallax1() {
       >
         <ParallaxBannerLayer
           image={uku6}
-          speed={25}
+        //   speed={25}
           className="banner1"
           scale={[1, 1]}
-          // translateY={[-25, 55]}
+          translateY={[-25, 55 , 'easeInQuint']}
           // style={{ transition: "transform 0.5s ease" }}
         />
         <ParallaxBannerLayer>
@@ -314,7 +315,8 @@ export default function Parallax1() {
         <ParallaxBannerLayer
           image={uku9}
           className="banner1"
-          speed={15}
+          translateY={[-15, 25, 'easeInQuint']}
+        //   speed={15}
           scale={[1, 1]}
         />
         <ParallaxBannerLayer>
@@ -348,7 +350,8 @@ export default function Parallax1() {
         <ParallaxBannerLayer
           image={uku3}
           className="banner1"
-          speed={25}
+        //   speed={25}
+        translateY={[-25, 40, 'easeInQuint']}
           scale={[1, 1]}
         />
         <ParallaxBannerLayer>
@@ -382,7 +385,8 @@ export default function Parallax1() {
         <ParallaxBannerLayer
           image={uku10}
           className="banner1"
-          speed={15}
+        //   speed={15}
+        translateY={[-25, 25, 'easeInQuint']}
           scale={[1, 1]}
         />
         <ParallaxBannerLayer>
@@ -416,7 +420,8 @@ export default function Parallax1() {
         <ParallaxBannerLayer
           image={uku11}
           className="banner1"
-          speed={15}
+        //   speed={15}
+        translateY={[-15, 30, 'easeInQuint']}
           scale={[1, 1]}
         />
         <ParallaxBannerLayer>
@@ -449,9 +454,9 @@ export default function Parallax1() {
       >
         <ParallaxBannerLayer
           image={logob}
-          style={{left:"-190px"}}
           className="banner1"
-          speed={15}
+        //   speed={15}
+        translateY={[-15, 30, 'easeInQuint']}
           scale={[1, 1]}
         />
         <ParallaxBannerLayer>
