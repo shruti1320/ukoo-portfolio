@@ -67,13 +67,29 @@
     }
   }
 
+  @media (max-width: 868px) {
+    .footer-social-icon {
+      width: 30px;
+      height: 35px;
+      padding: 20px; 
+      margin-top: -60px;
+
+    }
   
+    .footer-social a {
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
+      margin: 5px 3px;
+    }
+  }
+
   @media (max-width: 400px) {
     .footer-social-icon {
       width: 30px;
       height: 35px;
       padding: 20px;
-      // margin-top: -60px;
+      margin-top: -60px;
     }
   
     .footer-social a {

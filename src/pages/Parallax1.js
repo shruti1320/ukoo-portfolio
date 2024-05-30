@@ -1,25 +1,19 @@
-
 import React, { useState } from "react";
 import {
   ParallaxBanner,
   ParallaxBannerLayer,
   Parallax,
 } from "react-scroll-parallax";
-import uku1 from "../images/Banner/uku5.jpeg";
+import uku1 from "../images/Banner/uku1.jpg";
 import uku2 from "../images/Banner/uku4.jpeg";
-import uku3 from "../images/Banner/uku3.jpeg";
-import uku4 from "../images/Banner/uku8.jpeg";
-import uku5 from "../images/Banner/uku24.jpeg";
 import uku6 from "../images/Banner/uku22.jpeg";
 import uku7 from "../images/Banner/uku23.jpeg";
+import uku3 from "../images/Banner/uku3.jpeg";
 import uku8 from "../images/Banner/uku19.jpeg";
 import uku9 from "../images/Banner/uku20.jpeg";
 import uku10 from "../images/Banner/uku26.jpg";
 import uku11 from "../images/Banner/uku28.jpg";
-import uku13 from "../images/Banner/uku30.jpg";
-import u1 from "../images/Uku_Banner/u1.jpeg";
-// import "../scss/Parallax1.scss";
-import logob from "../images/Logo/b-vmake.jpg";
+import logob from "../images/Logo/i.jpg";
 import "../scss/Parallax1.css";
 import "../scss/Scrollbar.scss";
 import "../scss/Footer.scss";
@@ -42,27 +36,27 @@ const customStyles = {
     transition: "opacity 20s ease-in-out", // Smooth transition for overlay
   },
   content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-    wclassNameth: "80%",
-    maxWclassNameth: "700px",
-    maxHeight: "80%",
-    overflow: "auto",
-    borderRadius: "15px",
-    border: "none",
-    boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)", // Deeper shadow for more depth
-    background: "linear-gradient(135deg, #FFFFFF, #F1F1F1)", // Light gradient background
-    padding: "20px",
-    transition: "opacity 20s ease-in-out", // Smooth transition for content appearance
-    animation: "modalFadeIn 20s, gradientChange 20s infinite alternate", // Fade-in animation for the modal and continuous gradient change
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    Width: '80%',
+    maxWidth: '700px',
+    maxHeight: '80%',
+    overflow: 'auto',
+    borderRadius: '15px',
+    border: 'none',
+    boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)', // Deeper shadow for more depth
+    background: 'linear-gradient(135deg, #FFFFFF, #F1F1F1)', // Light gradient background
+    padding: '20px',
+    transition: 'opacity 20s ease-in-out', // Smooth transition for content appearance
+    animation: 'modalFadeIn 20s, gradientChange 20s infinite alternate', // Fade-in animation for the modal and continuous gradient change
     // Gradient color for title and paragraph
-    color: "#333", // Make text transparent to apply gradient
-    WebkitBackgroundClip: "text", // Apply gradient to text
-    background: "linear-gradient(135deg, #FF7E5F, #FEB47B)", // Gradient color for text
+    color: '#333', // Make text transparent to apply gradient
+    WebkitBackgroundClip: 'text', // Apply gradient to text
+    background: 'linear-gradient(135deg, #FF7E5F, #FEB47B)', // Gradient color for text
   },
   "@keyframes modalFadeIn": {
     from: {
@@ -114,63 +108,60 @@ export default function Parallax1() {
         {modalContent === 7 && <Blog_7 />}
         {modalContent === 8 && <Blog_8 />}
         {modalContent === 9 && <Blog_9 />}
-        <button
-          type="button"
+        <div
           className="modalCloseButton"
           onClick={() => {
             closeModal();
           }}
         >
           <i class="fa-solid fa-xmark"></i>
-        </button>
+        </div>
       </Modal>
-
-    
-        <ParallaxBanner
-          id="banner1"
-          style={{ width: "100%", top: "-10", height: "100vh" }}
-        >
-          <ParallaxBannerLayer
-            image={uku1}
-            className="banner1"
-            speed={25}
-            scale={[1, 1]}
-            style={{ top: "0px" }}
-          ></ParallaxBannerLayer>
-          <Parallax>
-            <div className="content-wrapper centered">
-              <div className="text-content ">The Ukoo</div>
-              <div className="text-content ">
-                Persembahan Forum Teknologi Sumatera Selatan
-              </div>
-              <div className="text-content ">
-                Palembang, 28 - 29 November 2020
-              </div>
-              <div>
-                <button
-                  type="button"
-                  className="btn1"
-                  onClick={() => {
-                    openModal(1);
-                  }}
-                >
-                  View more
-                </button>
-              </div>
+      <ParallaxBanner
+        id="banner1"
+        style={{ width: "100%", top: "-10px", height: "100vh", display: "flex" }}
+      >
+        {" "}
+        <ParallaxBannerLayer
+          image={uku1}
+          className="banner1"
+          speed={25}
+          scale={[1, 1]}
+          style={{ top: "0px" }}
+        ></ParallaxBannerLayer>
+        <Parallax>
+          <div className="content-wrapper left-aligned">
+            <div className="text-content" style={{ color: "white" }}>
+              The Ukoo
             </div>
-          </Parallax>
-        </ParallaxBanner>
- 
+            <div className="text-content " style={{ color: "white" }}>
+              Persembahan Forum Teknologi Sumatera Selatan
+            </div>
+            <div className="text-content " style={{ color: "white" }}>
+              Palembang, 28 - 29 November 2020
+            </div>
+            <button
+              class="pulse-button"
+              style={{ background: " #00A693" }}
+              onClick={() => {
+                openModal(1);
+              }}
+            >
+              View more
+            </button>
+          </div>
+        </Parallax>
+      </ParallaxBanner>
 
-      <ParallaxBanner id="banner2" style={{ width: "100%", top:"0", height: "100vh" }}>
+      <ParallaxBanner
+        id="banner2"
+        style={{ width: "100%", top: "0", height: "100vh", display: "flex" }}
+      >
         <ParallaxBannerLayer
           image={uku2}
           className="banner1"
           speed={45}
           scale={[1, 1]}
-          // style={{top:"0px"}}
-          // translateY={[-35, 25]}
-          // style={{transition: "transform 0.5s ease"}}
         />
         <Parallax>
           <div className="content-wrapper right-aligned">
@@ -183,8 +174,8 @@ export default function Parallax1() {
             </div>
             <div>
               <button
-                type="button"
-                className="btn1"
+                class="pulse-button"
+                style={{ background: "pink" }}
                 onClick={() => {
                   openModal(2);
                 }}
@@ -198,7 +189,7 @@ export default function Parallax1() {
 
       <ParallaxBanner
         id="banner3"
-        style={{ width: "100%", top: "0", height: "100vh" }}
+        style={{ width: "100%", top: "0", height: "100vh", display: "flex" }}
       >
         <ParallaxBannerLayer
           image={uku8}
@@ -206,22 +197,17 @@ export default function Parallax1() {
           className="banner1"
           speed={25}
           scale={[1, 1]}
-          // translateY={[-10, 30]}
-          // style={{transition: "transform 0.5s ease"}}
         />
         <Parallax>
           <div className="content-wrapper left-aligned">
-            <div className="text-content ">The Ukoo</div>
-            <div className="text-content ">
-              Persembahan Forum Teknologi Sumatera Selatan
-            </div>
-            <div className="text-content ">
-              Palembang, 28 - 29 November 2020
-            </div>
+            <div className="text-content text-dark">The Ukoo</div>
+            <div className="text-content text-dark">Nayraa jewelers surat Owner</div>
+            <div className="text-content text-dark"> 28 - 29 November 2020</div>
             <div>
               <button
                 type="button"
-                className="btn1"
+                className="pulse-button"
+                style={{ background: "brown" }}
                 onClick={() => {
                   openModal(8);
                 }}
@@ -235,7 +221,7 @@ export default function Parallax1() {
 
       <ParallaxBanner
         id="banner4"
-        style={{  top: "0", height: "100vh" }}
+        style={{ top: "0", height: "100vh", display: "flex" }}
       >
         <ParallaxBannerLayer
           image={uku7}
@@ -255,7 +241,8 @@ export default function Parallax1() {
             <div>
               <button
                 type="button"
-                className="btn1"
+                className="pulse-button"
+                style={{ background: "#de6fa1" }}
                 onClick={() => {
                   openModal(7);
                 }}
@@ -269,7 +256,7 @@ export default function Parallax1() {
 
       <ParallaxBanner
         id="banner5"
-        style={{ width: "100%", top: "0", height: "100vh" }}
+        style={{ width: "100%", top: "0", height: "100vh", display: "flex" }}
       >
         <ParallaxBannerLayer
           image={uku6}
@@ -278,7 +265,7 @@ export default function Parallax1() {
           scale={[1, 1]}
         />
         <Parallax>
-          <div className="content-wrapper left-aligned">
+          <div className="content-wrapper right-aligned">
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">
               Persembahan Forum Teknologi Sumatera Selatan
@@ -289,7 +276,8 @@ export default function Parallax1() {
             <div>
               <button
                 type="button"
-                className="btn1"
+                className="pulse-button"
+                style={{ background: "#9E7B52" }}
                 onClick={() => {
                   openModal(6);
                 }}
@@ -303,15 +291,14 @@ export default function Parallax1() {
 
       <ParallaxBanner
         id="banner6"
-        style={{ width: "100%", top: "0", height: "100vh" }}
-      >
+        style={{ width: "100%", top: "0", height: "100vh", display: "flex" }}
+       >
         <ParallaxBannerLayer
           image={uku9}
           className="banner1"
           speed={25}
-          // translateY={[-10, 30]}
           scale={[1, 1]}
-        />
+        ></ParallaxBannerLayer>
         <Parallax>
           <div className="content-wrapper right-aligned">
             <div className="text-content ">The Ukoo</div>
@@ -323,8 +310,8 @@ export default function Parallax1() {
             </div>
             <div>
               <button
-                type="button"
-                className="btn1"
+                className="pulse-button"
+                style={{ background: "#6A718F" }}
                 onClick={() => {
                   openModal(9);
                 }}
@@ -336,7 +323,7 @@ export default function Parallax1() {
         </Parallax>
       </ParallaxBanner>
 
-      <ParallaxBanner
+      {/* <ParallaxBanner
         id="banner7"
         style={{ width: "100%", top: "0", height: "100vh" }}
       >
@@ -366,18 +353,19 @@ export default function Parallax1() {
             </div>
           </div>
         </Parallax>
-      </ParallaxBanner>
+      </ParallaxBanner>  */}
 
       <ParallaxBanner
         id="banner8"
-        style={{ width: "100%", top: "0", height: "100vh" }}
-      >
-        <ParallaxBannerLayer
+        style={{ width: "100%", top: "0", height: "100vh", display: "flex" }}
+       >
+         <ParallaxBannerLayer
           image={uku10}
           className="banner1"
           speed={35}
           scale={[1, 1]}
-        />
+         />
+
         <Parallax>
           <div className="content-wrapper right-aligned">
             <div className="text-content ">The Ukoo</div>
@@ -390,7 +378,8 @@ export default function Parallax1() {
             <div>
               <button
                 type="button"
-                className="btn1"
+                className="pulse-button"
+                style={{ background: "#6A718F" }}
                 onClick={() => {
                   openModal(5);
                 }}
@@ -401,11 +390,7 @@ export default function Parallax1() {
           </div>
         </Parallax>
       </ParallaxBanner>
-
-      <ParallaxBanner
-        id="banner9"
-        style={{ top: "0", height: "100vh" }}
-      >
+      <ParallaxBanner id="banner9" style={{ top: "0", height: "100vh" }}>
         <ParallaxBannerLayer
           image={uku11}
           className="banner1"
@@ -413,7 +398,7 @@ export default function Parallax1() {
           scale={[1, 1]}
         />
         <Parallax>
-          <div className="content-wrapper left-aligned">
+          <div className="content-wrapper right-aligned">
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">
               Persembahan Forum Teknologi Sumatera Selatan
@@ -422,7 +407,8 @@ export default function Parallax1() {
             <div>
               <button
                 type="button"
-                className="btn1"
+                className="pulse-button"
+                style={{ background: "black" }}
                 onClick={() => {
                   openModal(4);
                 }}
@@ -445,7 +431,6 @@ export default function Parallax1() {
           translateY={[-25, 32]}
         >
           <img src={logob} alt="logo" className="footer-logo" />
-
           <div className="copyright-text-container">
             <CopyrightText />
           </div>
