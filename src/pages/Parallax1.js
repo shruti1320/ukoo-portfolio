@@ -6,19 +6,13 @@ import {
 } from "react-scroll-parallax";
 import uku1 from "../images/Banner/uku1.jpg";
 import uku2 from "../images/Banner/uku4.jpeg";
-import uku3 from "../images/Banner/uku3.jpeg";
-import uku4 from "../images/Banner/uku8.jpeg";
-import uku5 from "../images/Banner/uku24.jpeg";
 import uku6 from "../images/Banner/uku22.jpeg";
 import uku7 from "../images/Banner/uku23.jpeg";
 import uku8 from "../images/Banner/uku19.jpeg";
 import uku9 from "../images/Banner/uku20.jpeg";
 import uku10 from "../images/Banner/uku26.jpg";
 import uku11 from "../images/Banner/uku28.jpg";
-import uku13 from "../images/Banner/uku30.jpg";
-import u1 from "../images/Uku_Banner/u1.jpeg"
-// import "../scss/Parallax1.scss";
-import logob from "../images/Logo/b-vmake.jpeg";
+import logob from "../images/Logo/i.jpg";
 import "../scss/Parallax1.css";
 import "../scss/Scrollbar.scss";
 import "../scss/Footer.scss";
@@ -48,7 +42,7 @@ const customStyles = {
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
     wclassNameth: '80%',
-    maxWclassNameth: '700px',
+    maxWclassNameth: '500px',
     maxHeight: '80%',
     overflow: 'auto',
     borderRadius: '15px',
@@ -113,7 +107,7 @@ export default function Parallax1() {
   {modalContent===7&&<Blog_7 />}
   {modalContent===8&&<Blog_8 />}
   {modalContent===9&&<Blog_9 />}
-  <button type="button" className="modalCloseButton" onClick={()=>{closeModal()}}><i class="fa-solid fa-xmark"></i></button>
+  <div className="modalCloseButton" onClick={()=>{closeModal()}}><i class="fa-solid fa-xmark"></i></div>
 </Modal>
 
 
@@ -121,16 +115,17 @@ export default function Parallax1() {
       <ParallaxBanner id="banner1" style={{ width:"100%", top: "0" , height: "100vh" }}>
         <ParallaxBannerLayer
           image={uku1}
+          speed={15}
           className="banner1"
           style={{top:"0px"}}
         >
         </ParallaxBannerLayer>
-        <ParallaxBannerLayer>
-        <div className="content-wrapper centered">
+        <ParallaxBannerLayer> 
+        <div className="content-wrapper left-aligned">
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
             <div className="text-content ">Palembang, 28 - 29 November 2020</div>
-            <div><button type="button" className="btn1" onClick={()=>{openModal(1)}}>View more</button></div>
+            <button class="pulse-button" onClick={()=>{openModal(1)}}>View more</button>
         </div>
         </ParallaxBannerLayer>
         </ParallaxBanner>
@@ -141,7 +136,7 @@ export default function Parallax1() {
         <ParallaxBannerLayer
           image={uku2}
           className="banner1"
-          speed={35}
+          speed={45}
             scale={[1, 1]}
         />
        <ParallaxBannerLayer>
@@ -149,7 +144,7 @@ export default function Parallax1() {
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
             <div className="text-content ">Palembang, 28 - 29 November 2020</div>
-            <div><button type="button" className="btn1" onClick={()=>{openModal(2)}}>View more</button></div>
+            <div><button class="btn-hover color-10" onClick={()=>{openModal(2)}}>View more</button></div>
           </div>
         </ParallaxBannerLayer>
       </ParallaxBanner>
@@ -167,9 +162,9 @@ export default function Parallax1() {
         <ParallaxBannerLayer>
         <div className="content-wrapper left-aligned">
             <div className="text-content ">The Ukoo</div>
-            <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
-            <div className="text-content ">Palembang, 28 - 29 November 2020</div>
-            <div><button type="button" className="btn1"  onClick={()=>{openModal(8)}}>View more</button></div>
+            <div className="text-content ">Nayraa jewelers surat Owner</div>
+            <div className="text-content "> 28 - 29 November 2020</div>
+            <div><button type="button" className="btn1" onClick={()=>{openModal(8)}}>View more</button></div>
           </div>
         </ParallaxBannerLayer>
       </ParallaxBanner>
@@ -188,7 +183,7 @@ export default function Parallax1() {
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
             <div className="text-content ">Palembang, 28 - 29 November 2020</div>
-            <div><button type="button" className="btn1"  onClick={()=>{openModal(7)}}>View more</button></div>
+            <div><button type="button" className="btnnn"  onClick={()=>{openModal(7)}}>View more</button></div>
           </div>
         </ParallaxBannerLayer>
         </ParallaxBanner>
@@ -204,7 +199,7 @@ export default function Parallax1() {
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
             <div className="text-content ">Palembang, 28 - 29 November 2020</div>
-            <div><button type="button" className="btn1"  onClick={()=>{openModal(6)}}>View more</button></div>
+            <div><button type="button" className="box"  onClick={()=>{openModal(6)}}>View more</button></div>
           </div>
         </ParallaxBannerLayer>
         </ParallaxBanner>
@@ -222,12 +217,12 @@ export default function Parallax1() {
             <div className="text-content ">The Ukoo</div>
             <div className="text-content">Persembahan Forum Teknologi Sumatera Selatan</div>
             <div className="text-content ">Palembang, 28 - 29 November 2020</div>
-            <div><button type="button" className="btn1"  onClick={()=>{openModal(9)}}>View more</button></div>
+            <div ><button  className="btn-hover color-3"  onClick={()=>{openModal(9)}}>View more</button></div>
           </div>
         </ParallaxBannerLayer>
         </ParallaxBanner>
 
-
+{/* 
       <ParallaxBanner id="banner7"  style={{ width:"100%", top: "0" , height: "100vh" }}>
         <ParallaxBannerLayer
           image={uku3}
@@ -243,7 +238,7 @@ export default function Parallax1() {
             <div><button type="button" className="btn1"  onClick={()=>{openModal(3)}}>View more</button></div>
           </div>
         </ParallaxBannerLayer>
-        </ParallaxBanner>
+        </ParallaxBanner> */}
 
 
       <ParallaxBanner id="banner8"  style={{ width:"100%", top: "0" , height: "100vh" }}>        <ParallaxBannerLayer
@@ -257,7 +252,7 @@ export default function Parallax1() {
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
             <div className="text-content ">Palembang, 28 - 29 November 2020</div>
-            <div><button type="button" className="btn1"  onClick={()=>{openModal(5)}}>View more</button></div>
+            <div><button type="button"className="box"  onClick={()=>{openModal(5)}}>View more</button></div>
           </div>
         </ParallaxBannerLayer>
         </ParallaxBanner>
@@ -274,27 +269,28 @@ export default function Parallax1() {
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
             <div className="text-content">Palembang, 28 - 29 November 2020</div>
-            <div><button type="button" className="btn1"  onClick={()=>{openModal(4)}}>View more</button></div>
+            <div><button type="button" className="bttn"  onClick={()=>{openModal(4)}}>View more</button></div>
           </div>
         </ParallaxBannerLayer>
         </ParallaxBanner>
 
 
-        <ParallaxBanner id="banner10" className="banner2">
+        <ParallaxBanner  className="banner2">
          <ParallaxBannerLayer
           image={logob}
-          speed={15}
-          scale={[1, 1]}
-          translateY={[-1, 15]}
+          // speed={15}
+          // scale={[1, 1]}
+          translateY={[-25, 25]}
+          style={{top:"0px"}}
         />
           <ParallaxBannerLayer>
-       <div className="footer-container">
+       {/* <div className="footer-container">
           <Footer />
-       </div>
+       </div> */}
          </ParallaxBannerLayer>
-       <div className="copyright-text-container">
+       {/* <div className="copyright-text-container">
          <CopyrightText />
-      </div>
+      </div> */}
        </ParallaxBanner>
     </>
   );
