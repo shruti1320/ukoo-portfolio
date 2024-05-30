@@ -1,10 +1,11 @@
+
 import React, { useState } from "react";
 import {
   ParallaxBanner,
   ParallaxBannerLayer,
   Parallax,
 } from "react-scroll-parallax";
-import uku1 from "../images/Banner/uku1.jpg";
+import uku1 from "../images/Banner/uku5.jpeg";
 import uku2 from "../images/Banner/uku4.jpeg";
 import uku3 from "../images/Banner/uku3.jpeg";
 import uku4 from "../images/Banner/uku8.jpeg";
@@ -18,7 +19,7 @@ import uku11 from "../images/Banner/uku28.jpg";
 import uku13 from "../images/Banner/uku30.jpg";
 import u1 from "../images/Uku_Banner/u1.jpeg";
 // import "../scss/Parallax1.scss";
-import logob from "../images/Logo/b-vmake.jpeg";
+import logob from "../images/Logo/b-vmake.jpg";
 import "../scss/Parallax1.css";
 import "../scss/Scrollbar.scss";
 import "../scss/Footer.scss";
@@ -124,19 +125,19 @@ export default function Parallax1() {
         </button>
       </Modal>
 
-      <div>
+    
         <ParallaxBanner
           id="banner1"
-          style={{ width: "100%", top: "0", height: "100vh" }}
+          style={{ width: "100%", top: "-10", height: "100vh" }}
         >
           <ParallaxBannerLayer
             image={uku1}
             className="banner1"
-            speed={15}
+            speed={25}
             scale={[1, 1]}
             style={{ top: "0px" }}
           ></ParallaxBannerLayer>
-          <ParallaxBannerLayer>
+          <Parallax>
             <div className="content-wrapper centered">
               <div className="text-content ">The Ukoo</div>
               <div className="text-content ">
@@ -157,11 +158,11 @@ export default function Parallax1() {
                 </button>
               </div>
             </div>
-          </ParallaxBannerLayer>
+          </Parallax>
         </ParallaxBanner>
-      </div>
+ 
 
-      <ParallaxBanner id="banner2" style={{ width: "100%", height: "100vh" }}>
+      <ParallaxBanner id="banner2" style={{ width: "100%", top:"0", height: "100vh" }}>
         <ParallaxBannerLayer
           image={uku2}
           className="banner1"
@@ -171,7 +172,7 @@ export default function Parallax1() {
           // translateY={[-35, 25]}
           // style={{transition: "transform 0.5s ease"}}
         />
-        <ParallaxBannerLayer>
+        <Parallax>
           <div className="content-wrapper right-aligned">
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">
@@ -192,7 +193,7 @@ export default function Parallax1() {
               </button>
             </div>
           </div>
-        </ParallaxBannerLayer>
+        </Parallax>
       </ParallaxBanner>
 
       <ParallaxBanner
@@ -203,12 +204,12 @@ export default function Parallax1() {
           image={uku8}
           expanded={true}
           className="banner1"
-          speed={20}
+          speed={25}
           scale={[1, 1]}
           // translateY={[-10, 30]}
           // style={{transition: "transform 0.5s ease"}}
         />
-        <ParallaxBannerLayer>
+        <Parallax>
           <div className="content-wrapper left-aligned">
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">
@@ -229,20 +230,20 @@ export default function Parallax1() {
               </button>
             </div>
           </div>
-        </ParallaxBannerLayer>
+        </Parallax>
       </ParallaxBanner>
 
       <ParallaxBanner
         id="banner4"
-        style={{ width: "100%", top: "0", height: "100vh" }}
+        style={{  top: "0", height: "100vh" }}
       >
         <ParallaxBannerLayer
           image={uku7}
           className="banner1"
-          speed={23}
+          speed={33}
           scale={[1, 1]}
         />
-        <ParallaxBannerLayer>
+        <Parallax>
           <div className="content-wrapper right-aligned">
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">
@@ -263,7 +264,7 @@ export default function Parallax1() {
               </button>
             </div>
           </div>
-        </ParallaxBannerLayer>
+        </Parallax>
       </ParallaxBanner>
 
       <ParallaxBanner
@@ -272,11 +273,11 @@ export default function Parallax1() {
       >
         <ParallaxBannerLayer
           image={uku6}
-          speed={25}
+          speed={55}
           className="banner1"
           scale={[1, 1]}
         />
-        <ParallaxBannerLayer>
+        <Parallax>
           <div className="content-wrapper left-aligned">
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">
@@ -297,7 +298,7 @@ export default function Parallax1() {
               </button>
             </div>
           </div>
-        </ParallaxBannerLayer>
+        </Parallax>
       </ParallaxBanner>
 
       <ParallaxBanner
@@ -307,10 +308,11 @@ export default function Parallax1() {
         <ParallaxBannerLayer
           image={uku9}
           className="banner1"
-          speed={15}
+          speed={25}
+          // translateY={[-10, 30]}
           scale={[1, 1]}
         />
-        <ParallaxBannerLayer>
+        <Parallax>
           <div className="content-wrapper right-aligned">
             <div className="text-content ">The Ukoo</div>
             <div className="text-content">
@@ -331,7 +333,7 @@ export default function Parallax1() {
               </button>
             </div>
           </div>
-        </ParallaxBannerLayer>
+        </Parallax>
       </ParallaxBanner>
 
       <ParallaxBanner
@@ -341,10 +343,10 @@ export default function Parallax1() {
         <ParallaxBannerLayer
           image={uku3}
           className="banner1"
-          speed={25}
+          speed={35}
           scale={[1, 1]}
         />
-        <ParallaxBannerLayer>
+        <Parallax>
           <div className="content-wrapper left-aligned">
             <div className="text-content">The Ukoo</div>
             <div className="text-content ">
@@ -363,7 +365,7 @@ export default function Parallax1() {
               </button>
             </div>
           </div>
-        </ParallaxBannerLayer>
+        </Parallax>
       </ParallaxBanner>
 
       <ParallaxBanner
@@ -373,10 +375,10 @@ export default function Parallax1() {
         <ParallaxBannerLayer
           image={uku10}
           className="banner1"
-          speed={15}
+          speed={35}
           scale={[1, 1]}
         />
-        <ParallaxBannerLayer>
+        <Parallax>
           <div className="content-wrapper right-aligned">
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">
@@ -397,20 +399,20 @@ export default function Parallax1() {
               </button>
             </div>
           </div>
-        </ParallaxBannerLayer>
+        </Parallax>
       </ParallaxBanner>
 
       <ParallaxBanner
         id="banner9"
-        style={{ width: "100%", top: "0", height: "100vh" }}
+        style={{ top: "0", height: "100vh" }}
       >
         <ParallaxBannerLayer
           image={uku11}
           className="banner1"
-          speed={15}
+          speed={35}
           scale={[1, 1]}
         />
-        <ParallaxBannerLayer>
+        <Parallax>
           <div className="content-wrapper left-aligned">
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">
@@ -429,28 +431,25 @@ export default function Parallax1() {
               </button>
             </div>
           </div>
-        </ParallaxBannerLayer>
+        </Parallax>
       </ParallaxBanner>
 
-      <ParallaxBanner
-        id="banner10"
-        style={{ width: "100%", top: "0", height: "100vh" }}
-      >
+      <ParallaxBanner id="banner10" className="banner2">
         <ParallaxBannerLayer
-          image={logob}
-          className="banner1"
-          speed={15}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
           scale={[1, 1]}
-          translateY={[-1, 15]}
-        />
-        <ParallaxBannerLayer>
-          <div className="footer-container">
-            <Footer />
+          translateY={[-25, 32]}
+        >
+          <img src={logob} alt="logo" className="footer-logo" />
+
+          <div className="copyright-text-container">
+            <CopyrightText />
           </div>
         </ParallaxBannerLayer>
-        <div className="copyright-text-container">
-          <CopyrightText />
-        </div>
       </ParallaxBanner>
     </>
   );

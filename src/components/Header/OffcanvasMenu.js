@@ -73,9 +73,9 @@ const OffcanvasMenu = () => {
           </a>
         </li>
       </ul>
-      <div style={{ marginTop: "auto", marginBottom: "30px" }}>
+      {/* <div style={{ marginTop: "auto", marginBottom: "30px" }}>
         <HeaderFooter />
-      </div>
+      </div> */}
     </div>
   </div>
   )

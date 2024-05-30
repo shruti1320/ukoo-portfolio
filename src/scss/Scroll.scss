@@ -1,10 +1,32 @@
-.scroll-top{   
+.scroll-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    cursor: pointer; 
-    // 
+    cursor: pointer;
     background-color: bisque;
-    border-radius: 50%;  
-    padding:10px;
+    opacity: 0.8; /* Slightly higher opacity for better visibility */
+    border-radius: 50%;
+    padding: 15px; /* Increased padding for better touch target */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.scroll-top:hover {
+    opacity: 1; /* Full opacity on hover */
+    transform: translateY(-5px); /* Slight upward movement on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.scroll-top:active {
+    transform: translateY(0); /* No movement on active */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Original shadow on active */
+}
+
+.scroll-top i {
+    font-size: 24px; /* Icon size */
+    color: #333; /* Icon color */
 }
