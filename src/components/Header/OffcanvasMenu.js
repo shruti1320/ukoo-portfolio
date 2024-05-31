@@ -22,6 +22,7 @@ const OffcanvasMenu = () => {
     className="offcanvas offcanvas-end offcanvas-color"
     tabIndex="-1"
     id="offcanvasRight"
+    data-bs-scroll="true" 
     aria-labelledby="offcanvasRightLabel"
   >
     <div className="offcanvas-header">

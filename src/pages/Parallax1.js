@@ -135,14 +135,14 @@ export default function Parallax1() {
         <Parallax>
           <div className="content-wrapper left-aligned">
             <div className="text-content" style={{ color: "white" }}>
-              The Ukoo
+            Where nature's serenity meets the sparkle of fine jewelry. Explore our global collection with The Ukoo.
             </div>
-            <div className="text-content " style={{ color: "white" }}>
+            {/* <div className="text-content " style={{ color: "white" }}>
               Persembahan Forum Teknologi Sumatera Selatan
             </div>
             <div className="text-content " style={{ color: "white" }}>
               Palembang, 28 - 29 November 2020
-            </div>
+            </div> */}
             <button
               class="pulse-button"
               style={{ background: " #00A693" }}
