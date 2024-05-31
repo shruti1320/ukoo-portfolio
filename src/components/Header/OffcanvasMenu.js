@@ -1,13 +1,18 @@
 // OffcanvasMenu.js
 import React from 'react';
-import "../../scss/Offcanvas.scss"
 
 const OffcanvasMenu = () => {
 
   const scrollToSection = (id,e) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - 70;
+    
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
     }
   }; 
 
@@ -17,6 +22,7 @@ const OffcanvasMenu = () => {
     className="offcanvas offcanvas-end offcanvas-color"
     tabIndex="-1"
     id="offcanvasRight"
+    data-bs-scroll="true" 
     aria-labelledby="offcanvasRightLabel"
   >
     <div className="offcanvas-header">
@@ -29,6 +35,9 @@ const OffcanvasMenu = () => {
     </div>
 
     <div
+    
+    
+      className="offcanvas-body"
       style={{
         display: "flex",
         justifyContent: "space-between",
@@ -36,42 +45,52 @@ const OffcanvasMenu = () => {
         height: "100vh",
       }}
     >
-      <ul style={{ listStyleType: "none" , paddingLeft: "0px"}} className="m-auto">
+      <ul style={{ listStyleType: "none" , paddingLeft: "0px" , fontFamily:"serif" , fontStyle:"oblique"}} className="m-auto" >
         <li className="nav-item fs-5">
           <a className="nav-link text-white custom-underline"  data-bs-dismiss="offcanvas" aria-current="page"  onClick={() => scrollToSection("banner1")} href="#home">
-            Ukoo - The Brand
+            The Brand
           </a>
         </li>
         <li className="nav-item fs-5">
           <a className="nav-link text-white custom-underline"  data-bs-dismiss="offcanvas" onClick={() => scrollToSection("banner2")} href="#bumn">
-            Nature
+            Beach
           </a>
         </li>
         <li className="nav-item fs-5">
           <a className="nav-link text-white custom-underline"  data-bs-dismiss="offcanvas" onClick={() => scrollToSection("banner3")} href="#softwareengineer">
-            View Admirer
+            Minimalistic
           </a>
         </li>
         <li className="nav-item fs-5">
           <a className="nav-link text-white custom-underline"  data-bs-dismiss="offcanvas" onClick={() => scrollToSection("banner4")} href="#it">
-            Traditional
+            Travelling
           </a>
         </li>
         <li className="nav-item fs-5">
           <a className="nav-link text-white custom-underline"  data-bs-dismiss="offcanvas" onClick={() => scrollToSection("banner5")} href="#startup">
-            Sunset
+            Snow
           </a>
         </li>
         <li className="nav-item fs-5">
           <a className="nav-link text-white custom-underline"  data-bs-dismiss="offcanvas" onClick={() => scrollToSection("banner6")} href="#Daftar">
-            Animal Lover
+          Traditional
           </a>
         </li>
         <li className="nav-item fs-5">
+          <a className="nav-link text-white custom-underline"  data-bs-dismiss="offcanvas" onClick={() => scrollToSection("banner7")} href="#Daftar">
+          Dessert
+          </a>
+        </li>
+        <li className="nav-item fs-5">
+          <a className="nav-link text-white custom-underline"  data-bs-dismiss="offcanvas" onClick={() => scrollToSection("banner8")} href="#Daftar">
+          Events
+          </a>
+        </li>
+        {/* <li className="nav-item fs-5">
           <a className="nav-link text-white custom-underline"  data-bs-dismiss="offcanvas" onClick={() => scrollToSection("banner10")} href="#gallery">
             Gallery
           </a>
-        </li>
+        </li> */}
       </ul>
       {/* <div style={{ marginTop: "auto", marginBottom: "30px" }}>
         <HeaderFooter />

@@ -8,16 +8,11 @@ import uku1 from "../images/Banner/uku5.jpeg";
 import uku2 from "../images/Banner/uku4.jpeg";
 import uku6 from "../images/Banner/uku22.jpeg";
 import uku7 from "../images/Banner/uku23.jpeg";
-import uku3 from "../images/Banner/uku3.jpeg";
 import uku8 from "../images/Banner/uku19.jpeg";
 import uku9 from "../images/Banner/uku20.jpeg";
 import uku10 from "../images/Banner/uku26.jpg";
 import uku11 from "../images/Banner/uku28.jpg";
 import logob from "../images/Logo/i.jpg";
-import "../scss/Parallax1.css";
-import "../scss/Parallax1.scss";
-import "../scss/Scrollbar.scss";
-import "../scss/Footer.scss";
 import Modal from "react-modal";
 import Blog_1 from "../components/blogDetail/Blog_1";
 import Blog_2 from "../components/blogDetail/Blog_2";
@@ -26,10 +21,14 @@ import Blog_4 from "../components/blogDetail/Blog_4";
 import Blog_5 from "../components/blogDetail/Blog_5";
 import Blog_6 from "../components/blogDetail/Blog_6";
 import Blog_7 from "../components/blogDetail/Blog_7";
-import Footer from "./Footer";
 import CopyrightText from "./CopyRightTaxt";
 import Blog_8 from "../components/blogDetail/Blog_8";
 import Blog_9 from "../components/blogDetail/Blog_9";
+import "../scss/Parallax1.css";
+import "../scss/Scrollbar.scss";
+import "../scss/Footer.scss";
+
+
 const customStyles = {
   overlay: {
     backgroundColor: "rgba(0, 0, 0, 0.75)", // Darker overlay for a more dramatic effect
@@ -81,6 +80,8 @@ const customStyles = {
     },
   },
 };
+
+
 export default function Parallax1() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalContent, setModalContent] = useState(null);
@@ -136,14 +137,14 @@ export default function Parallax1() {
         <Parallax>
           <div className="content-wrapper left-aligned">
             <div className="text-content" style={{ color: "white" }}>
-              The Ukoo
+            Where nature's serenity meets the sparkle of fine jewelry. Explore our global collection with The Ukoo.
             </div>
-            <div className="text-content " style={{ color: "white" }}>
+            {/* <div className="text-content " style={{ color: "white" }}>
               Persembahan Forum Teknologi Sumatera Selatan
             </div>
             <div className="text-content " style={{ color: "white" }}>
               Palembang, 28 - 29 November 2020
-            </div>
+            </div> */}
             <button
               class="pulse-button"
               style={{ background: " #00A693" }}
@@ -169,7 +170,14 @@ export default function Parallax1() {
           speed={45}
           scale={[1, 1]}
         />
-        <Parallax>
+        <Parallax
+          className="ms-auto"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <div className="content-wrapper right-aligned">
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">
@@ -181,7 +189,7 @@ export default function Parallax1() {
             <div>
               <button
                 class="pulse-button"
-                style={{ background: "#d74894" }}
+                style={{ background: "#D74894 " }}
                 onClick={() => {
                   openModal(2);
                 }}
@@ -242,7 +250,14 @@ export default function Parallax1() {
           speed={33}
           scale={[1, 1]}
         />
-        <Parallax>
+        <Parallax
+          className="ms-auto"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <div className="content-wrapper right-aligned">
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">
@@ -280,14 +295,20 @@ export default function Parallax1() {
           className="banner1 black"
           scale={[1, 1]}
         />
-        <div className="ms-auto" style={{ display: "flex", justifyContent: "center", alignItems: "center" }} >
-        <Parallax>
+        <Parallax
+          className="ms-auto"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <div className="content-wrapper right-aligned">
-            <div className="text-content ">The Ukoo</div>
-            <div className="text-content ">
+            <div className="text-content text-dark">The Ukoo</div>
+            <div className="text-content text-dark">
               Persembahan Forum Teknologi Sumatera Selatan
             </div>
-            <div className="text-content ">
+            <div className="text-content text-dark">
               Palembang, 28 - 29 November 2020
             </div>
             <div>
@@ -304,7 +325,7 @@ export default function Parallax1() {
             </div>
           </div>
         </Parallax>
-        </div>
+       
       </ParallaxBanner>
 </div>
       
@@ -319,7 +340,15 @@ export default function Parallax1() {
           speed={25}
           scale={[1, 1]}
         ></ParallaxBannerLayer>
-        <Parallax>
+
+        <Parallax
+          className="ms-auto"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <div className="content-wrapper right-aligned">
             <div className="text-content ">The Ukoo</div>
             <div className="text-content">
@@ -331,7 +360,7 @@ export default function Parallax1() {
             <div>
               <button
                 className="pulse-button"
-                style={{ background: "#6A718F" }}
+                style={{ background: "#953F7E" }}
                 onClick={() => {
                   openModal(9);
                 }}
@@ -342,12 +371,9 @@ export default function Parallax1() {
           </div>
         </Parallax>
       </ParallaxBanner>
-</div>
 
-
-  <div>
       <ParallaxBanner
-        id="banner8" 
+        id="banner7"
         style={{ width: "100%", top: "0", height: "100vh", display: "flex" }}
       >
         <ParallaxBannerLayer
@@ -355,69 +381,89 @@ export default function Parallax1() {
           className="banner1 black"
           speed={35}
           scale={[1, 1]}
-        />
-        <div className="ms-auto" style={{ display: "flex", justifyContent: "center", alignItems: "center" }} >
-
-        <Parallax>
-          <div className="content-wrapper right-aligned">
-            <div className="text-content ">The Ukoo</div>
-            <div className="text-content ">
-              Persembahan Forum Teknologi Sumatera Selatan
-            </div>
-            <div className="text-content ">
-              Palembang, 28 - 29 November 2020
-            </div>
-            <div>
-              <button
-                type="button"
-                className="pulse-button"
-                style={{ background: "#6A718F" }}
-                onClick={() => {
-                  openModal(5);
-                }}
-              >
-                View more
-              </button>
-            </div>
+        >
+        </ParallaxBannerLayer>
+          <div
+            className="ms-auto"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Parallax>
+              <div className="content-wrapper right-aligned">
+                <div className="text-content ">The Ukoo</div>
+                <div className="text-content ">
+                  Persembahan Forum Teknologi Sumatera Selatan
+                </div>
+                <div className="text-content ">
+                  Palembang, 28 - 29 November 2020
+                </div>
+                <div>
+                  <button
+                    type="button"
+                    className="pulse-button"
+                    style={{ background: "#6A718F" }}
+                    onClick={() => {
+                      openModal(5);
+                    }}
+                  >
+                    View more
+                  </button>
+                </div>
+              </div>
+            </Parallax>
           </div>
-        </Parallax>
-        </div>
       </ParallaxBanner>
   </div>
 
-<div>
-      <ParallaxBanner id="banner9" style={{ top: "0", height: "100vh" , display: "flex"}}>
+
+
+      <ParallaxBanner
+        id="banner8"
+        style={{ top: "0", height: "100vh", display: "flex" }}
+      >
         <ParallaxBannerLayer
           image={uku11}
           className="banner1 black"
           speed={35}
           scale={[1, 1]}
         />
-        <div className="ms-auto" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-        <Parallax >
-          <div className="content-wrapper right-aligned">
-            <div className="text-content ">The Ukoo</div>
-            <div className="text-content ">
-              Persembahan Forum Teknologi Sumatera Selatan
+        <div
+          className="ms-auto"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Parallax>
+            <div className="content-wrapper right-aligned">
+              <div className="text-content ">The Ukoo</div>
+              <div className="text-content ">
+                Persembahan Forum Teknologi Sumatera Selatan
+              </div>
+              <div className="text-content">
+                Palembang, 28 - 29 November 2020
+              </div>
+              <div>
+                <button
+                  type="button"
+                  className="pulse-button"
+                  style={{ background: "black" }}
+                  onClick={() => {
+                    openModal(4);
+                  }}
+                >
+                  View more
+                </button>
+              </div>
             </div>
-            <div className="text-content">Palembang, 28 - 29 November 2020</div>
-            <div>
-              <button
-                type="button"
-                className="pulse-button"
-                style={{ background: "black" }}
-                onClick={() => {
-                  openModal(4);
-                }}
-              >
-                View more
-              </button>
-            </div>
-          </div>
-        </Parallax>
+          </Parallax>
         </div>
       </ParallaxBanner>
-</div>
+
 
 
       <ParallaxBanner id="banner10" className="banner2">

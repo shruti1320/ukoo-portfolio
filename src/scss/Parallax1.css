@@ -49,28 +49,48 @@ button:focus {
   }
 }
 
+.banner1{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.banner1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Adjust opacity for desired darkness */
+  z-index: 1;
+}
+
+/* .content-wrapper {
+  position: relative;
+  z-index: 2;
+} */
+
 .content-wrapper {
   flex-direction: column;
-  align-items: flex-start;
+
   justify-content: center;
   display: flex;
   height: 100%;
   padding: 20px;
-  font-size: 30px;
+  font-size: 35px;
   font-style: oblique;
   font-family: serif;
 }
 .right-aligned {
   text-align: right;
-  /* margin-left: 300px; */
+
   color: white;
-  /* margin-top: 200px; */
+ 
 }
 .left-aligned {
   text-align: left;
-  /* margin-right: 300px; */
+ 
   color: white;
-  /* margin-top: 200px; */
+  
 }
 .centered {
   text-align: center;
@@ -89,6 +109,185 @@ button:focus {
   display: flex;
   justify-content: center;
 }
+
+
+
+.banner2 {
+  aspect-ratio: 2/1;
+  top:0;
+  align-items: center;
+  vertical-align: middle;
+  margin: auto;
+  /* margin-right: -190px; */
+}
+
+
+.modalCloseButton {
+  position: absolute;
+  top: 10px;
+  
+  right: 10px;
+  bottom:0px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+  z-index: 1;
+}
+
+
+.banner2 {
+  width: 100wh;
+  height: 100vh;
+  position: relative;
+}
+
+.footer-logo {
+  max-width: 100%; /* Ensure the logo doesn't overflow */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media screen and (max-width: 2000px) {
+  .banner2 {
+    width: 100wh;
+    height: 100vh;
+    background-color: black;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    margin-top: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-aligned {
+    margin: 0;
+    text-align: left;
+  }
+  .right-aligned {
+    margin: 0;
+    text-align: right;
+  }
+  .centered {
+    margin: 0;
+    text-align: center;
+  }
+  .text-content {
+    font-size: 26px;
+    color: white;
+  }
+ 
+
+  .btn1 {
+    font-size: 20px;
+    margin-top: -150px;
+  }
+
+}
+
+@media screen and (max-width: 680px) {
+  #banner1,
+  #banner2,
+  #banner3,
+  #banner4,
+  #banner5,
+  #banner6,
+  #banner7,
+  #banner8,
+  #banner9 {
+    width: 100%;
+
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .btn1 {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn1 {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 430px) {
+  .footer-container {
+    margin-top: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+
+  .left-aligned {
+    margin: 0;
+    text-align: left;
+  }
+  .right-aligned {
+    margin: 0;
+    text-align: right;
+  }
+  .centered {
+    margin: 0;
+    margin-top: 170px;
+    text-align: center;
+  }
+
+  .text-content {
+    font-size: 28px;
+    color: white;
+  }
+
+  .btn1 {
+    font-size: 10px;
+    margin-top: 8px;
+  }
+ 
+}
+
+@media (max-width: 400px) {
+  .footer-container {
+    margin-top: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+
+  .left-aligned {
+    margin: 0;
+    text-align: left;
+  }
+  .right-aligned {
+    margin: 0;
+    text-align: right;
+  }
+  .centered {
+    margin: 0;
+    text-align: center;
+  }
+
+  .text-content {
+    font-size: 24px;
+  }
+
+  .btn1 {
+    font-size: 15px;
+    margin-top: -150px;
+  }
+}
+
+
 @media (max-width: 768px) {
   .footer-container {
     margin-top: 0;
@@ -111,6 +310,13 @@ button:focus {
    .text-content {
     font-size: 24px;
   }
+  .content-wrapper{
+    margin-top: 150px;
+  }
+  /* .btn1 {
+    font-size: 20px;
+    margin-top: -150px;
+  } */
   .banner2{
     top:0;
     aspect-ratio: 2/1;
@@ -140,7 +346,13 @@ button:focus {
    .text-content {
     font-size: 24px;
   }
-
+  .content-wrapper{
+    margin-top: 50px;
+  }
+  /* .btn1 {
+    font-size: 20px;
+    margin-top: -150px;
+  } */
   .banner2{
     top:0;
     aspect-ratio: 2/1;
@@ -170,7 +382,13 @@ button:focus {
    .text-content {
     font-size: 24px;
   }
-
+  .content-wrapper{
+    margin-top: 50px;
+  }
+  /* .btn1 {
+    font-size: 20px;
+    margin-top: -150px;
+  } */
   .banner2{
     top:0;
     aspect-ratio: 2/1;
@@ -201,6 +419,7 @@ button:focus {
     font-size: 24px;
   }
 
+
   .banner2{
     top:0;
     aspect-ratio: 2/1;
@@ -230,7 +449,13 @@ button:focus {
    .text-content {
     font-size: 24px;
   }
-
+  .content-wrapper{
+    margin-top: 50px;
+  }
+  /* .btn1 {
+    font-size: 20px;
+    margin-top: -150px;
+  } */
   .banner2{
     top:0;
     aspect-ratio: 2/1;
@@ -267,36 +492,8 @@ button:focus {
     }
   
 }
-@media (max-width: 400px) {
-  .footer-container {
-    margin-top: 0;
-    margin-right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .banner2{
-    top:0;
-    aspect-ratio: 2/1;
-    }
 
-  .left-aligned {
-    margin: 0;
-    text-align: left;
-  }
- .right-aligned{
-  margin:0;
-  text-align: right;
- }
- .centered{
-  margin:0;
-  text-align: center;
- }
-  .text-content {
-    font-size: 24px;
-  }
 
-}
 @media (max-width: 430px) {
   .footer-container {
     margin-top: 0;
@@ -305,6 +502,8 @@ button:focus {
     justify-content: center;
     align-items: center;
   }
+  
+
   .left-aligned {
     margin: 0;
     text-align: left;
@@ -318,141 +517,12 @@ button:focus {
   text-align: center;
  }
   .text-content {
-    font-size: 12px;
+    font-size: 20px;
   }
  .banner2{
  top:0;
  aspect-ratio: 2/1;
  }
-}
-.banner2 {
-  aspect-ratio: 2/1;
-  top:0;
-  align-items: center;
-  vertical-align: middle;
-  margin: auto;
-  /* margin-right: -190px; */
-}
-
-.modalCloseButton {
-  position: absolute;
-  top: 10px;
-  
-  right: 10px;
-  bottom:0px;
-  background-color: transparent;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: #fff;
-  z-index: 1;
-}
-.banner2 {
-  width: 100wh;
-  height: 100vh;
-  position: relative;
-}
-.footer-logo {
-  max-width: 100%; /* Ensure the logo doesn't overflow */
-  height: auto; /* Maintain aspect ratio */
-}
-@media screen and (max-width: 2000px) {
-  .banner2 {
-    width: 100wh;
-    height: 100vh;
-    background-color: black;
-  }
-}
-@media (max-width: 768px) {
-  .footer-container {
-    margin-top: 0;
-    margin-right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .left-aligned {
-    margin: 0;
-    text-align: left;
-  }
-  .right-aligned {
-    margin: 0;
-    text-align: right;
-  }
-  .centered {
-    margin: 0;
-    text-align: center;
-  }
-  .text-content {
-    font-size: 26px;
-    color: white;
-  }
-}
-@media screen and (max-width: 680px) {
-  #banner1,
-  #banner2,
-  #banner3,
-  #banner4,
-  #banner5,
-  #banner6,
-  #banner7,
-  #banner8,
-  #banner9 {
-    width: 100%;
-    object-fit: cover;
-  }
-}
-
-@media (max-width: 430px) {
-  .footer-container {
-    margin-top: 0;
-    margin-right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .left-aligned {
-    margin: 0;
-    text-align: left;
-  }
-  .right-aligned {
-    margin: 0;
-    text-align: right;
-  }
-  .centered {
-    margin: 0;
-    margin-top: 170px;
-    text-align: center;
-  }
-  .text-content {
-    font-size: 28px;
-    color: white;
-  }
-}
-@media (max-width: 400px) {
-  .footer-container {
-    margin-top: 0;
-    margin-right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .left-aligned {
-    margin: 0;
-    text-align: left;
-  }
-  .right-aligned {
-    margin: 0;
-    text-align: right;
-  }
-  .centered {
-    margin: 0;
-    text-align: center;
-  }
-  .text-content {
-    font-size: 14px;
-  }
 }
 
 
