@@ -8,6 +8,7 @@ import uku1 from "../images/Banner/uku1.jpg";
 import uku2 from "../images/Banner/uku4.jpeg";
 import uku6 from "../images/Banner/uku22.jpeg";
 import uku7 from "../images/Banner/uku23.jpeg";
+import uku3 from "../images/Banner/uku3.jpeg";
 import uku8 from "../images/Banner/uku19.jpeg";
 import uku9 from "../images/Banner/uku20.jpeg";
 import uku10 from "../images/Banner/uku26.jpg";
@@ -41,8 +42,8 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    wclassNameth: '80%',
-    maxWclassNameth: '500px',
+    Width: '80%',
+    maxWidth: '700px',
     maxHeight: '80%',
     overflow: 'auto',
     borderRadius: '15px',
@@ -111,187 +112,219 @@ export default function Parallax1() {
 </Modal>
 
 
-   <div>
-      <ParallaxBanner id="banner1" style={{ width:"100%", top: "0" , height: "100vh" }}>
-        <ParallaxBannerLayer
-          image={uku1}
-          speed={15}
-          className="banner1"
-          style={{top:"0px"}}
-        >
-        </ParallaxBannerLayer>
-        <ParallaxBannerLayer> 
-        <div className="content-wrapper left-aligned">
-            <div className="text-content ">The Ukoo</div>
-            <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
-            <div className="text-content ">Palembang, 28 - 29 November 2020</div>
-            <button class="pulse-button" onClick={()=>{openModal(1)}}>View more</button>
-        </div>
-        </ParallaxBannerLayer>
-        </ParallaxBanner>
-        </div>
 
-      <ParallaxBanner  id="banner2"
-        style={{ width:"100%", height: "100vh" }}>
+        <ParallaxBanner
+          id="banner1"
+          style={{ width: "100%", top: "-10", height: "100vh" }}
+        > <ParallaxBannerLayer
+        image={uku1}
+        className="banner1"
+        speed={25}
+        scale={[1, 1]}
+        style={{ top: "0px" }}
+      ></ParallaxBannerLayer>
+        <Parallax> 
+        <div className="content-wrapper left-aligned">
+            <div className="text-content" style={{color:"white"}}>The Ukoo</div>
+            <div className="text-content " style={{color:"white"}}>Persembahan Forum Teknologi Sumatera Selatan</div>
+            <div className="text-content " style={{color:"white"}}>Palembang, 28 - 29 November 2020</div>
+            <button class="pulse-button" style={{background:" #00A693"}} onClick={()=>{openModal(1)}}>View more</button>
+        </div>
+        </Parallax>
+        </ParallaxBanner>
+
+        <ParallaxBanner id="banner2" style={{ width: "100%", top:"0", height: "100vh" }}>
         <ParallaxBannerLayer
           image={uku2}
           className="banner1"
           speed={45}
             scale={[1, 1]}
         />
-       <ParallaxBannerLayer>
+       <Parallax>
           <div className="content-wrapper right-aligned">
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
             <div className="text-content ">Palembang, 28 - 29 November 2020</div>
-            <div><button class="btn-hover color-10" onClick={()=>{openModal(2)}}>View more</button></div>
+            <div><button class="pulse-button" style={{background:"#de6fa1"}}onClick={()=>{openModal(2)}}>View more</button></div>
           </div>
-        </ParallaxBannerLayer>
+        </Parallax>
       </ParallaxBanner>
 
 
-      <ParallaxBanner  id="banner3"
-        style={{ width:"100%", top: "0" , height: "100vh" }}>
+      <ParallaxBanner
+        id="banner3"
+        style={{ width: "100%", top: "0", height: "100vh" }}
+      >
         <ParallaxBannerLayer
           image={uku8}
           expanded={true}
           className="banner1"
-          speed={10}
-            scale={[1, 1]}
+          speed={25}
+          scale={[1, 1]}
         />
-        <ParallaxBannerLayer>
+        <Parallax>
         <div className="content-wrapper left-aligned">
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">Nayraa jewelers surat Owner</div>
             <div className="text-content "> 28 - 29 November 2020</div>
-            <div><button type="button" className="btn1" onClick={()=>{openModal(8)}}>View more</button></div>
+            <div><button type="button" className="pulse-button" style={{background:"brown"}} onClick={()=>{openModal(8)}}>View more</button></div>
           </div>
-        </ParallaxBannerLayer>
+        </Parallax>
       </ParallaxBanner>
 
 
-      <ParallaxBanner id="banner4"
-        style={{ width:"100%", top: "0" , height: "100vh" }}>
+      <ParallaxBanner
+        id="banner4"
+        style={{  top: "0", height: "100vh" }}
+      >
         <ParallaxBannerLayer
           image={uku7}
           className="banner1"
-          speed={25}
+          speed={33}
           scale={[1, 1]}
         />
-         <ParallaxBannerLayer>
+         <Parallax>
         <div className="content-wrapper right-aligned">
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
             <div className="text-content ">Palembang, 28 - 29 November 2020</div>
-            <div><button type="button" className="btnnn"  onClick={()=>{openModal(7)}}>View more</button></div>
+            <div><button type="button" className="pulse-button" style={{background:"blue"}} onClick={()=>{openModal(7)}}>View more</button></div>
           </div>
-        </ParallaxBannerLayer>
+        </Parallax>
         </ParallaxBanner>
 
-      <ParallaxBanner id="banner5"  style={{ width:"100%", top: "0" , height: "100vh" }}>
+        <ParallaxBanner
+        id="banner5"
+        style={{ width: "100%", top: "0", height: "100vh" }}
+      >
         <ParallaxBannerLayer image={uku6}
-          speed={25}
+          speed={55}
           className="banner1"
           scale={[1, 1]}
         />
-          <ParallaxBannerLayer>
-        <div className="content-wrapper left-aligned">
+          <Parallax>
+        <div className="content-wrapper right-aligned">
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
             <div className="text-content ">Palembang, 28 - 29 November 2020</div>
-            <div><button type="button" className="box"  onClick={()=>{openModal(6)}}>View more</button></div>
+            <div><button type="button" className="pulse-button" style={{background:"#fdde6c"}} onClick={()=>{openModal(6)}}>View more</button></div>
           </div>
-        </ParallaxBannerLayer>
+        </Parallax>
         </ParallaxBanner>
 
 
-      <ParallaxBanner id="banner6"  style={{ width:"100%", top: "0" , height: "100vh" }}>
+        <ParallaxBanner
+        id="banner6"
+        style={{ width: "100%", top: "0", height: "100vh" }}
+      >
         <ParallaxBannerLayer
+        
           image={uku9}
           className="banner1"
-          speed={15}
-          scale={[1, 1]}
-        />
-        <ParallaxBannerLayer>
+          speed={25}
+          scale={[1, 1]}>
+        </ParallaxBannerLayer>
+        <Parallax>
         <div className="content-wrapper right-aligned">
             <div className="text-content ">The Ukoo</div>
             <div className="text-content">Persembahan Forum Teknologi Sumatera Selatan</div>
             <div className="text-content ">Palembang, 28 - 29 November 2020</div>
-            <div ><button  className="btn-hover color-3"  onClick={()=>{openModal(9)}}>View more</button></div>
+            <div ><button  className="pulse-button" style={{background:"#4D4192"}} onClick={()=>{openModal(9)}}>View more</button></div>
           </div>
-        </ParallaxBannerLayer>
+        </Parallax>
         </ParallaxBanner>
 
-{/* 
-      <ParallaxBanner id="banner7"  style={{ width:"100%", top: "0" , height: "100vh" }}>
+         {/* <ParallaxBanner
+        id="banner7"
+        style={{ width: "100%", top: "0", height: "100vh" }}
+      >
         <ParallaxBannerLayer
           image={uku3}
           className="banner1"
-          speed={25}
+          speed={35}
           scale={[1, 1]}
         />
-        <ParallaxBannerLayer>
-        <div className="content-wrapper left-aligned">
+        <Parallax>
+          <div className="content-wrapper left-aligned">
             <div className="text-content">The Ukoo</div>
-            <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
+            <div className="text-content ">
+              Persembahan Forum Teknologi Sumatera Selatan
+            </div>
             <div className="text-content">Palembang, 28 - 29 November 2020</div>
-            <div><button type="button" className="btn1"  onClick={()=>{openModal(3)}}>View more</button></div>
+            <div>
+              <button
+                type="button"
+                className="btn1"
+                onClick={() => {
+                  openModal(3);
+                }}
+              >
+                View more
+              </button>
+            </div>
           </div>
-        </ParallaxBannerLayer>
-        </ParallaxBanner> */}
+        </Parallax>
+      </ParallaxBanner>  */}
 
 
-      <ParallaxBanner id="banner8"  style={{ width:"100%", top: "0" , height: "100vh" }}>        <ParallaxBannerLayer
+      <ParallaxBanner
+        id="banner8"
+        style={{ width: "100%", top: "0", height: "100vh" }}
+      >            
+       <ParallaxBannerLayer
           image={uku10}
           className="banner1"
-          speed={15}
+          speed={35}
           scale={[1, 1]}
         />
-        <ParallaxBannerLayer>
+        <Parallax>
         <div className="content-wrapper right-aligned">
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
             <div className="text-content ">Palembang, 28 - 29 November 2020</div>
-            <div><button type="button"className="box"  onClick={()=>{openModal(5)}}>View more</button></div>
+            <div><button type="button"className="pulse-button" style={{background:"none"}}  onClick={()=>{openModal(5)}}>View more</button></div>
           </div>
-        </ParallaxBannerLayer>
+        </Parallax>
         </ParallaxBanner>
 
 
-      <ParallaxBanner id="banner9"  style={{ width:"100%", top: "0" , height: "100vh" }}>        <ParallaxBannerLayer
+        <ParallaxBanner
+        id="banner9"
+        style={{ top: "0", height: "100vh" }}
+      >
+                 <ParallaxBannerLayer
           image={uku11}
           className="banner1"
-          speed={15}
+          speed={35}
           scale={[1, 1]}
         />
-          <ParallaxBannerLayer>
-        <div className="content-wrapper left-aligned">
+          <Parallax>
+        <div className="content-wrapper right-aligned">
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">Persembahan Forum Teknologi Sumatera Selatan</div>
             <div className="text-content">Palembang, 28 - 29 November 2020</div>
-            <div><button type="button" className="bttn"  onClick={()=>{openModal(4)}}>View more</button></div>
+            <div><button type="button" className="pulse-button" style={{background:"none"}} onClick={()=>{openModal(4)}}>View more</button></div>
           </div>
-        </ParallaxBannerLayer>
+        </Parallax>
         </ParallaxBanner>
 
+        <ParallaxBanner id="banner10" className="banner2">
+        <ParallaxBannerLayer
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+          scale={[1, 1]}
+          translateY={[-25, 32]}
+        >
+          <img src={logob} alt="logo" className="footer-logo" />
 
-        <ParallaxBanner  className="banner2">
-         <ParallaxBannerLayer
-          image={logob}
-          // speed={15}
-          // scale={[1, 1]}
-          translateY={[-25, 25]}
-          style={{top:"0px"}}
-        />
-          <ParallaxBannerLayer>
-       {/* <div className="footer-container">
-          <Footer />
-       </div> */}
-         </ParallaxBannerLayer>
-       {/* <div className="copyright-text-container">
-         <CopyrightText />
-      </div> */}
-       </ParallaxBanner>
+          <div className="copyright-text-container">
+            <CopyrightText />
+          </div>
+        </ParallaxBannerLayer>
+      </ParallaxBanner>
     </>
   );
 }

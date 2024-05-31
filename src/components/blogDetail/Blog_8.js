@@ -4,7 +4,7 @@ import uku1 from "../../images/Banner/uku19.jpeg";
 
 export default function Blog_8() {
   return (
-    <div className="container1">
+    <div className="container">
       <article className="blog-post">
         <h1 className="post-title">
           Minimalism Meets Luxury: The Rise of Dainty and Delicate Jewelry Designs

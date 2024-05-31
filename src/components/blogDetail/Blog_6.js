@@ -4,7 +4,7 @@ import "../../scss/Blog.css"
 
 export default function Blog_6() {
   return (
-    <div className="container1">
+    <div className="container">
       <article className="blog-post">
         <h1>Winter Wonderland: Exploring the Magic of Snowy Destinations</h1>
         <div className="post-meta">

@@ -5,7 +5,7 @@ import "../../scss/Blog.css"
 export default function Blog_2() {
   return (
     <div>
-      <div className="container1">
+      <div className="container">
         <article className="blog-post">
           <h1>Beach Photography Tips: Capturing Stunning Moments by the Shore</h1>
           <div className="post-meta">

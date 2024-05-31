@@ -1,31 +1,31 @@
 
 
 /* Button resets and style */
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat'); */
 
 button {
   width:200px;
   height:55px;
   margin: 20px;
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
   font-size: 20px;
   color: #ffffff;
   cursor: pointer;
   border-radius: 100px;
   padding: 15px 15px;
   border: 0px solid #000;   
-  background: #00A693; /* Persian Green */
+  /* background: #00A693; Persian Green */
 }
 
 /* Initiate Auto-Pulse animations */
 button.pulse-button {
-  animation: borderPulse 1000ms infinite ease-out;
+  animation: borderPulse 2000ms infinite ease-out;
 }
 
 /* Continue animation and add shine on hover */
 button:hover,
 button:focus {
-  animation: borderPulse 1000ms infinite ease-out, hoverShine 200ms;
+  animation: borderPulse 2000ms infinite ease-out, hoverShine 200ms;
 }
 
 /* Declare border pulse animation */
@@ -182,7 +182,7 @@ box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
 
 .bttn {
   background: transparent; 
-  color: white; 
+  color: black; 
   border: 2px solid white; 
   border-radius: 30px; 
   padding: 12px 25px;
@@ -236,11 +236,10 @@ box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
 }
 
 .footer-container {
-  margin-top: 350px;
-  padding:10px;
   align-items: center;
-  display: flex;
-  justify-content: center;
+  vertical-align: middle;
+  margin: auto;
+  /* margin-right: -190px; */
 }
 
 @media (max-width: 768px) {
@@ -546,8 +545,13 @@ box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
 
 
 .banner2 {
-  aspect-ratio: 2/1;
-  top:0;
+  width: 100wh;
+  height: 100vh;
+  position: relative;
+}
+.footer-logo {
+  max-width: 100%; /* Ensure the logo doesn't overflow */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .modalCloseButton {
@@ -567,7 +571,7 @@ box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
 
 
 
-.banner1{
+/* .banner1{
   display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -590,32 +594,118 @@ box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
     -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-}
-@media screen and (max-width: 768px) {
-  .btn1 {
-    font-size: 1rem; 
-    margin-top: 10px;
+} */
+@media (max-width: 400px) {
+  .footer-container {
+    margin-top: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  .content-wrapper {
+    margin-top: 50px;
+  }
+
+  .left-aligned {
+    margin: 0;
+    text-align: left;
+  }
+  .right-aligned {
+    margin: 0;
+    text-align: right;
+  }
+  .centered {
+    margin: 0;
+    text-align: center;
+  }
+
+  .text-content {
+    font-size: 14px;
+  }
+
 }
 
+@media (max-width: 430px) {
+  .footer-container {
+    margin-top: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-wrapper {
+    margin-top: 50px;
+  }
+
+  .left-aligned {
+    margin: 0;
+    text-align: left;
+  }
+  .right-aligned {
+    margin: 0;
+    text-align: right;
+  }
+  .centered {
+    margin: 0;
+    margin-top: 170px;
+    text-align: center;
+  }
+
+  .text-content {
+    font-size: 28px;
+    color: white;
+  }
+
+}
 @media screen and (max-width: 680px) {
-  #banner1 , #banner2, #banner3, #banner4 , #banner5 , #banner6 , #banner7, #banner8 , #banner9 , #banner10 {
-    width: 100%; 
-    
+  #banner1,
+  #banner2,
+  #banner3,
+  #banner4,
+  #banner5,
+  #banner6,
+  #banner7,
+  #banner8,
+  #banner9 {
+    width: 100%;
+
     object-fit: cover;
   }
 }
-
-@media screen and (max-width: 576px) {
-  .btn1 {
-    flex-direction: column;
+@media (max-width: 768px) {
+  .footer-container {
+    margin-top: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
+  .left-aligned {
+    margin: 0;
+    text-align: left;
+  }
+  .right-aligned {
+    margin: 0;
+    text-align: right;
+  }
+  .centered {
+    margin: 0;
+    text-align: center;
+  }
+  .text-content {
+    font-size: 26px;
+    color: white;
+  }
+  .content-wrapper {
+    margin-top: 150px;
+  }
 }
-
-
-@media (max-width: 480px) {
-  .btn1 {
-    margin-top: 5px;
+@media screen and (max-width: 2000px) {
+  .banner2 {
+    width: 100wh;
+    height: 100vh;
+    background-color: black;
   }
 }

@@ -4,7 +4,7 @@ import uku1 from "../../images/Banner/uku13.jpeg";
 
 export default function Blog_1() {
   return (
-    <div className="container1">
+    <div className="container">
       <article className="blog-post">
       {/* <i class="fa-solid fa-xmark"></i> */}
         <h1 className="post-title">

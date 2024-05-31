@@ -4,7 +4,7 @@ import "../../scss/Blog.css"
 
 export default function Blog_4() {
   return (
-    <div className="container1">
+    <div className="container">
       <article className="blog-post">
         <h1>How to Choose the Right Business Events for Your Industry</h1>
         <div className="post-meta">

@@ -5,7 +5,7 @@ import "../../scss/Blog.css"
 export default function Blog_3() {
   return (
     <div>
-      <div className="container1">
+      <div className="container">
         <article className="blog-post">
           <h1>Creative Portrait Photography: Techniques for Capturing Personality and Expression</h1>
           <div className="post-meta">
