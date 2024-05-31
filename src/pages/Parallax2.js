@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Profiler, useCallback, useState } from "react";
 import {
   ParallaxBanner,
   ParallaxBannerLayer,
@@ -80,6 +80,34 @@ const customStyles = {
   },
 };
 
+
+const callback = (
+  id,
+  phase,
+  actualDuration,
+  startTime,
+  baseDuration,
+  commitTime,
+  interactions
+) => {
+  console.log(
+      "id " +
+          id +
+          " startTime " +
+          startTime +
+          " actualDuration " +
+          actualDuration +
+          " baseDuration " +
+          baseDuration +
+          " commitTime " +
+          commitTime +
+          " phase " +
+          phase +
+          " interactions " +
+          interactions
+  );
+};
+
 export default function Parallax2() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalContent, setModalContent] = useState(null);
@@ -91,6 +119,8 @@ export default function Parallax2() {
     setModalContent(null);
     setModalIsOpen(false);
   };
+
+
   return (
     <>
       <Modal
@@ -119,6 +149,7 @@ export default function Parallax2() {
       </Modal>
 
    
+
         <ParallaxBanner
           id="banner1"
           style={{
@@ -128,7 +159,8 @@ export default function Parallax2() {
             display: "flex",
           }}
         >
-          {" "}
+         <Profiler id="1" onRender={callback}>
+
           <ParallaxBannerLayer
             image={uku1}
             className="banner1"
@@ -136,6 +168,7 @@ export default function Parallax2() {
             scale={[1, 1]}
             style={{ top: "-10px" }}
           ></ParallaxBannerLayer>
+         </Profiler>
           <Parallax>
             <div className="content-wrapper left-aligned">
               <div className="text-content" style={{ color: "white" }}>
@@ -304,14 +337,14 @@ export default function Parallax2() {
           scale={[1, 1]}
         />
         <Parallax
-          className="ms-auto"
+          // className="ms-auto"
           style={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
           }}
         >
-          <div className="content-wrapper right-aligned">
+          <div className="content-wrapper left-aligned">
             {/* <div className="text-content ">The Ukoo</div> */}
             <div className="text-content ">
               <div className="text-content" style={{ color: "white" }}>
@@ -365,7 +398,8 @@ export default function Parallax2() {
       >
         <ParallaxBannerLayer
           image={uku6}
-          speed={-35}
+          speed={-25}
+          style={{right:"-300px"}}
           className="banner1"
           scale={[1, 1]}
         />
@@ -504,7 +538,15 @@ export default function Parallax2() {
                   className=" text-wrap text-md fw-bold "
                   style={{ textShadow: "3px 3px 3px #000" }}
                 >
-                  Embracing timeless beauty amidst the
+                  Embracing timeless beauty amidst 
+                </strong>
+              </div>
+              <div className="text-content ">
+                <strong
+                  className=" text-wrap text-md fw-bold "
+                  style={{ textShadow: "3px 3px 3px #000" }}
+                >
+                  the majestic expanse of
                 </strong>
               </div>
               <div className="text-content">
@@ -512,7 +554,7 @@ export default function Parallax2() {
                   className=" text-wrap text-md fw-bold "
                   style={{ textShadow: "3px 3px 3px #000" }}
                 >
-                  majestic expanse of Dubai's desert.
+                   Dubai's desert.
                 </strong>
               </div>
 
@@ -559,7 +601,15 @@ export default function Parallax2() {
                   className=" text-wrap text-md fw-bold "
                   style={{ textShadow: "3px 3px 3px #000" }}
                 >
-                  Embarking on a journey of discovery amidst the
+                  Embarking on a journey of discovery 
+                </strong>
+              </div>
+              <div className="text-content ">
+                <strong
+                  className=" text-wrap text-md fw-bold "
+                  style={{ textShadow: "3px 3px 3px #000" }}
+                >
+                 amidst the intricate world of
                 </strong>
               </div>
               <div className="text-content">
@@ -567,7 +617,7 @@ export default function Parallax2() {
                   className=" text-wrap text-md fw-bold "
                   style={{ textShadow: "3px 3px 3px #000" }}
                 >
-                  intricate world of jewelry craftsmanship.
+                   jewelry craftsmanship.
                 </strong>
               </div>
 
