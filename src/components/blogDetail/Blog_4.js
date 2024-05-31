@@ -1,5 +1,5 @@
 import React from "react";
-import uku4 from "../../images/Banner/uku16.jpeg";
+import uku4 from "../../images/Banner/uku28.jpg";
 import "../../scss/Blog.css"
 
 export default function Blog_4() {

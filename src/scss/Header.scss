@@ -47,11 +47,20 @@
   width: 100px;
   margin-right: 240px;
 }
+
+@media screen and (max-width: 1200px) {
+  .logo-distance {
+    width: 100px;
+    margin-right: 80px;
+  }
+}
+
 @media screen and (max-width: 620px) {
   .logo-distance {
     margin-right: 40px;
   }
 
+  
   .offcanvas-color {
     background-color: #00BCD4;
     color: #FFFFFF;

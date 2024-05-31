@@ -9,8 +9,7 @@ export default function Blog_6() {
         <h1>Winter Wonderland: Exploring the Magic of Snowy Destinations</h1>
         <div className="post-meta">
           <span>{new Date().toLocaleDateString()}</span>
-          <span> | </span>
-          <span>0 Comments</span>
+         
         </div>
         <div className="post-thumbnail">
           <img src={uku6} alt="Winter Wonderland" style={{ width: "100%" }} />
