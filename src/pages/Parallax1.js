@@ -15,6 +15,7 @@ import uku10 from "../images/Banner/uku26.jpg";
 import uku11 from "../images/Banner/uku28.jpg";
 import logob from "../images/Logo/i.jpg";
 import "../scss/Parallax1.css";
+import "../scss/Parallax1.scss";
 import "../scss/Scrollbar.scss";
 import "../scss/Footer.scss";
 import Modal from "react-modal";
@@ -117,14 +118,17 @@ export default function Parallax1() {
           <i class="fa-solid fa-xmark"></i>
         </div>
       </Modal>
+
+     <div >
       <ParallaxBanner
         id="banner1"
         style={{ width: "100%", top: "0px", height: "100vh", display: "flex" }}
       >
         {" "}
+       
         <ParallaxBannerLayer
           image={uku1}
-          className="banner1"
+          className="banner1 black"
           speed={25}
           scale={[1, 1]}
           style={{ top: "-10px" }}
@@ -152,13 +156,16 @@ export default function Parallax1() {
           </div>
         </Parallax>
       </ParallaxBanner>
+      </div>
+
+<div >
       <ParallaxBanner
         id="banner2"
         style={{ width: "100%", top: "0", height: "100vh", display: "flex" }}
       >
         <ParallaxBannerLayer
           image={uku2}
-          className="banner1"
+          className="banner1 black"
           speed={45}
           scale={[1, 1]}
         />
@@ -174,7 +181,7 @@ export default function Parallax1() {
             <div>
               <button
                 class="pulse-button"
-                style={{ background: "pink" }}
+                style={{ background: "#d74894" }}
                 onClick={() => {
                   openModal(2);
                 }}
@@ -185,6 +192,10 @@ export default function Parallax1() {
           </div>
         </Parallax>
       </ParallaxBanner>
+</div>
+
+
+<div>
       <ParallaxBanner
         id="banner3"
         style={{ width: "100%", top: "0", height: "100vh", display: "flex" }}
@@ -192,7 +203,7 @@ export default function Parallax1() {
         <ParallaxBannerLayer
           image={uku8}
           expanded={true}
-          className="banner1"
+          className="banner1 black"
           speed={25}
           scale={[1, 1]}
         />
@@ -218,13 +229,16 @@ export default function Parallax1() {
           </div>
         </Parallax>
       </ParallaxBanner>
+</div>
+
+<div >
       <ParallaxBanner
         id="banner4"
         style={{ top: "0", height: "100vh", display: "flex" }}
       >
         <ParallaxBannerLayer
           image={uku7}
-          className="banner1"
+          className="banner1 black"
           speed={33}
           scale={[1, 1]}
         />
@@ -252,6 +266,10 @@ export default function Parallax1() {
           </div>
         </Parallax>
       </ParallaxBanner>
+</div>   
+
+    
+<div>
       <ParallaxBanner
         id="banner5"
         style={{ width: "100%", top: "0", height: "100vh", display: "flex" }}
@@ -259,9 +277,10 @@ export default function Parallax1() {
         <ParallaxBannerLayer
           image={uku6}
           speed={55}
-          className="banner1"
+          className="banner1 black"
           scale={[1, 1]}
         />
+        <div className="ms-auto" style={{ display: "flex", justifyContent: "center", alignItems: "center" }} >
         <Parallax>
           <div className="content-wrapper right-aligned">
             <div className="text-content ">The Ukoo</div>
@@ -285,14 +304,18 @@ export default function Parallax1() {
             </div>
           </div>
         </Parallax>
+        </div>
       </ParallaxBanner>
+</div>
+      
+<div>
       <ParallaxBanner
         id="banner6"
         style={{ width: "100%", top: "0", height: "100vh", display: "flex" }}
       >
         <ParallaxBannerLayer
           image={uku9}
-          className="banner1"
+          className="banner1 black"
           speed={25}
           scale={[1, 1]}
         ></ParallaxBannerLayer>
@@ -319,47 +342,22 @@ export default function Parallax1() {
           </div>
         </Parallax>
       </ParallaxBanner>
-      {/* <ParallaxBanner
-        id="banner7"
-        style={{ width: "100%", top: "0", height: "100vh" }}
-      >
-        <ParallaxBannerLayer
-          image={uku3}
-          className="banner1"
-          speed={35}
-          scale={[1, 1]}
-        />
-        <Parallax>
-          <div className="content-wrapper left-aligned">
-            <div className="text-content">The Ukoo</div>
-            <div className="text-content ">
-              Persembahan Forum Teknologi Sumatera Selatan
-            </div>
-            <div className="text-content">Palembang, 28 - 29 November 2020</div>
-            <div>
-              <button
-                type="button"
-                className="btn1"
-                onClick={() => {
-                  openModal(3);
-                }}
-              >
-                View more
-              </button>
-            </div>
-          </div>
-        </Parallax>
-      </ParallaxBanner>  */}
+</div>
+
+
+  <div>
       <ParallaxBanner
-        id="banner8"
+        id="banner8" 
         style={{ width: "100%", top: "0", height: "100vh", display: "flex" }}
       >
         <ParallaxBannerLayer
           image={uku10}
-          className="banner1"
+          className="banner1 black"
           speed={35}
           scale={[1, 1]}
         />
+        <div className="ms-auto" style={{ display: "flex", justifyContent: "center", alignItems: "center" }} >
+
         <Parallax>
           <div className="content-wrapper right-aligned">
             <div className="text-content ">The Ukoo</div>
@@ -383,11 +381,15 @@ export default function Parallax1() {
             </div>
           </div>
         </Parallax>
+        </div>
       </ParallaxBanner>
+  </div>
+
+<div>
       <ParallaxBanner id="banner9" style={{ top: "0", height: "100vh" , display: "flex"}}>
         <ParallaxBannerLayer
           image={uku11}
-          className="banner1"
+          className="banner1 black"
           speed={35}
           scale={[1, 1]}
         />
@@ -415,6 +417,9 @@ export default function Parallax1() {
         </Parallax>
         </div>
       </ParallaxBanner>
+</div>
+
+
       <ParallaxBanner id="banner10" className="banner2">
         <ParallaxBannerLayer
           style={{
@@ -426,6 +431,28 @@ export default function Parallax1() {
           translateY={[-25, 32]}
         >
           <img src={logob} alt="logo" className="footer-logo" />
+          <div className="add">
+    <a href="#">
+      <svg>
+        <use href="#fileIcon"/>
+      </svg>
+    </a>
+    <a href="#">
+      <svg>
+        <use href="#imageIcon"/>
+      </svg>
+    </a>
+    <a href="#">
+      <svg>
+        <use href="#mailIcon"/>
+      </svg>
+    </a>
+    <a href="#">
+      <svg>
+        <use href="#chatIcon"/>
+      </svg>
+    </a>
+  </div>
           <div className="copyright-text-container">
             <CopyrightText />
           </div>

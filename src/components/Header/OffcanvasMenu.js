@@ -1,10 +1,10 @@
 // OffcanvasMenu.js
 import React from 'react';
-import HeaderFooter from './HeaderFooter';
+import "../../scss/Offcanvas.scss"
 
 const OffcanvasMenu = () => {
 
-  const scrollToSection = (id) => {
+  const scrollToSection = (id,e) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -12,7 +12,7 @@ const OffcanvasMenu = () => {
   }; 
 
   return (
-    
+    <>
   <div
     className="offcanvas offcanvas-end offcanvas-color"
     tabIndex="-1"
@@ -78,6 +78,7 @@ const OffcanvasMenu = () => {
       </div> */}
     </div>
   </div>
+    </>
   )
 }
 
