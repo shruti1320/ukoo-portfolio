@@ -55,7 +55,7 @@ const socialMediaLinks = [
 
 const Footer = () => {
   return (
-    <div className=' text-center' style={{paddingTop:"100px", paddingBottom:"100px"}}>
+    <div className='text-center'>
       <div className="container">
         <div className="row">
           <div className="col-md-12">

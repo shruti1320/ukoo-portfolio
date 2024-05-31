@@ -8,7 +8,7 @@ export default function Blog_1() {
       <article className="blog-post">
       {/* <i class="fa-solid fa-xmark"></i> */}
         <h1 className="post-title">
-          Our Mission and Vision: What Drives The Ukoo
+          My Mission and Vision: What Drives The Ukoo
         </h1>
         <div className="post-meta">
           <span>May 19, 2019</span>
