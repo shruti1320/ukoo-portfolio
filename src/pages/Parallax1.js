@@ -4,7 +4,7 @@ import {
   ParallaxBannerLayer,
   Parallax,
 } from "react-scroll-parallax";
-import uku1 from "../images/Banner/uku1.jpg";
+import uku1 from "../images/Banner/uku5.jpeg";
 import uku2 from "../images/Banner/uku4.jpeg";
 import uku6 from "../images/Banner/uku22.jpeg";
 import uku7 from "../images/Banner/uku23.jpeg";
@@ -36,27 +36,27 @@ const customStyles = {
     transition: "opacity 20s ease-in-out", // Smooth transition for overlay
   },
   content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-    Width: '80%',
-    maxWidth: '700px',
-    maxHeight: '80%',
-    overflow: 'auto',
-    borderRadius: '15px',
-    border: 'none',
-    boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)', // Deeper shadow for more depth
-    background: 'linear-gradient(135deg, #FFFFFF, #F1F1F1)', // Light gradient background
-    padding: '20px',
-    transition: 'opacity 20s ease-in-out', // Smooth transition for content appearance
-    animation: 'modalFadeIn 20s, gradientChange 20s infinite alternate', // Fade-in animation for the modal and continuous gradient change
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    Width: "80%",
+    maxWidth: "700px",
+    maxHeight: "80%",
+    overflow: "auto",
+    borderRadius: "15px",
+    border: "none",
+    boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)", // Deeper shadow for more depth
+    background: "linear-gradient(135deg, #FFFFFF, #F1F1F1)", // Light gradient background
+    padding: "20px",
+    transition: "opacity 20s ease-in-out", // Smooth transition for content appearance
+    animation: "modalFadeIn 20s, gradientChange 20s infinite alternate", // Fade-in animation for the modal and continuous gradient change
     // Gradient color for title and paragraph
-    color: '#333', // Make text transparent to apply gradient
-    WebkitBackgroundClip: 'text', // Apply gradient to text
-    background: 'linear-gradient(135deg, #FF7E5F, #FEB47B)', // Gradient color for text
+    color: "#333", // Make text transparent to apply gradient
+    WebkitBackgroundClip: "text", // Apply gradient to text
+    background: "linear-gradient(135deg, #FF7E5F, #FEB47B)", // Gradient color for text
   },
   "@keyframes modalFadeIn": {
     from: {
@@ -117,9 +117,10 @@ export default function Parallax1() {
           <i class="fa-solid fa-xmark"></i>
         </div>
       </Modal>
+
       <ParallaxBanner
         id="banner1"
-        style={{ width: "100%", top: "-10px", height: "100vh", display: "flex" }}
+        style={{ width: "100%", top: "0px", height: "100vh", display: "flex" }}
       >
         {" "}
         <ParallaxBannerLayer
@@ -127,7 +128,7 @@ export default function Parallax1() {
           className="banner1"
           speed={25}
           scale={[1, 1]}
-          style={{ top: "0px" }}
+          style={{ top: "-10px" }}
         ></ParallaxBannerLayer>
         <Parallax>
           <div className="content-wrapper left-aligned">
@@ -201,7 +202,9 @@ export default function Parallax1() {
         <Parallax>
           <div className="content-wrapper left-aligned">
             <div className="text-content text-dark">The Ukoo</div>
-            <div className="text-content text-dark">Nayraa jewelers surat Owner</div>
+            <div className="text-content text-dark">
+              Nayraa jewelers surat Owner
+            </div>
             <div className="text-content text-dark"> 28 - 29 November 2020</div>
             <div>
               <button
@@ -292,7 +295,7 @@ export default function Parallax1() {
       <ParallaxBanner
         id="banner6"
         style={{ width: "100%", top: "0", height: "100vh", display: "flex" }}
-       >
+      >
         <ParallaxBannerLayer
           image={uku9}
           className="banner1"
@@ -358,13 +361,13 @@ export default function Parallax1() {
       <ParallaxBanner
         id="banner8"
         style={{ width: "100%", top: "0", height: "100vh", display: "flex" }}
-       >
-         <ParallaxBannerLayer
+      >
+        <ParallaxBannerLayer
           image={uku10}
           className="banner1"
           speed={35}
           scale={[1, 1]}
-         />
+        />
 
         <Parallax>
           <div className="content-wrapper right-aligned">
@@ -390,15 +393,19 @@ export default function Parallax1() {
           </div>
         </Parallax>
       </ParallaxBanner>
-      <ParallaxBanner id="banner9" style={{ top: "0", height: "100vh" }}>
+
+
+      <ParallaxBanner id="banner9" style={{ top: "0", height: "100vh" , display: "flex"}}>
         <ParallaxBannerLayer
           image={uku11}
           className="banner1"
           speed={35}
           scale={[1, 1]}
         />
-        <Parallax>
-          <div className="content-wrapper right-aligned">
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+
+        <Parallax >
+          <div >
             <div className="text-content ">The Ukoo</div>
             <div className="text-content ">
               Persembahan Forum Teknologi Sumatera Selatan
@@ -418,6 +425,7 @@ export default function Parallax1() {
             </div>
           </div>
         </Parallax>
+        </div>
       </ParallaxBanner>
 
       <ParallaxBanner id="banner10" className="banner2">
