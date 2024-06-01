@@ -58,7 +58,7 @@ const Header = () => {
           <NavMenu />
         </div>
       </nav>
-      <Offcanvas show={show} onHide={handleClose} placement="end" className="offcanvas-color"> 
+      <Offcanvas show={show} onHide={handleClose} placement="end" className="offcanvas-color" style={{width:"auto"}}> 
         <OffcanvasMenu />
       </Offcanvas>
    

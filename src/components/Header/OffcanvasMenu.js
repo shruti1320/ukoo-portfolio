@@ -4,7 +4,7 @@ import { Offcanvas } from 'react-bootstrap';
 import "../../scss/Offcanvas.scss";
 const OffcanvasMenu = () => {
 
-  const scrollToSection = (id,e) => {
+  const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
       const elementPosition = element.getBoundingClientRect().top + window.scrollY;
@@ -19,13 +19,12 @@ const OffcanvasMenu = () => {
 
   return (
 
-    <>
+    <div>
       <Offcanvas.Header closeButton className="custom-close-button">
       
       </Offcanvas.Header>
 
-
-    <Offcanvas.Body className="d-flex flex-column justify-content-between" style={{ height: "100vh" }}>
+    <Offcanvas.Body className="d-flex flex-column justify-content-between" style={{ height: "100vh",padding:"0px 90px" }}>
       <ul style={{ listStyleType: "none" , paddingLeft: "0px" , fontFamily:"serif" , fontStyle:"oblique"}} className="m-auto" >
         <li className="nav-item fs-5">
           <a className="nav-link text-white custom-underline"  data-bs-dismiss="offcanvas" aria-current="page"  onClick={() => scrollToSection("banner1")} href="#home">
@@ -75,7 +74,7 @@ const OffcanvasMenu = () => {
       </ul>
 
     </Offcanvas.Body>
-    </>
+    </div>
 
 
   )
