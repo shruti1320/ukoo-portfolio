@@ -25,6 +25,7 @@ import CopyrightText from "./CopyRightTaxt";
 import Blog_8 from "../components/blogDetail/Blog_8";
 import Blog_9 from "../components/blogDetail/Blog_9";
 import "../scss/Parallax1.css";
+import "../scss/Parallax1.scss";
 import "../scss/Scrollbar.scss";
 import "../scss/Footer.scss";
 
@@ -134,6 +135,7 @@ export default function Parallax1() {
           scale={[1, 1]}
           style={{ top: "-10px" }}
         ></ParallaxBannerLayer>
+
         <Parallax>
           <div className="content-wrapper left-aligned">
             <div className="text-content" style={{ color: "white" }}>
@@ -476,7 +478,7 @@ export default function Parallax1() {
           scale={[1, 1]}
           translateY={[-25, 32]}
         >
-          <img src={logob} alt="logo" className="footer-logo" />
+          {/* <img src={logob} alt="logo" className="footer-logo" /> */}
           <div className="add">
     <a href="#">
       <svg>
@@ -498,10 +500,10 @@ export default function Parallax1() {
         <use href="#chatIcon"/>
       </svg>
     </a>
-  </div>
-          <div className="copyright-text-container">
+           </div>
+          {/* <div className="copyright-text-container">
             <CopyrightText />
-          </div>
+          </div> */}
         </ParallaxBannerLayer>
       </ParallaxBanner>
     </>

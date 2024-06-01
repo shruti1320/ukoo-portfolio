@@ -1,5 +1,6 @@
 // OffcanvasMenu.js
 import React from 'react';
+import "../../scss/Offcanvas.scss"
 
 const OffcanvasMenu = () => {
 
