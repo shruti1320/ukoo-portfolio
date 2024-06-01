@@ -1,6 +1,7 @@
 // OffcanvasMenu.js
 import React from 'react';
-
+import { Offcanvas } from 'react-bootstrap';
+import "../../scss/Offcanvas.scss";
 const OffcanvasMenu = () => {
 
   const scrollToSection = (id) => {
@@ -17,34 +18,14 @@ const OffcanvasMenu = () => {
   }; 
 
   return (
-    
-  <div
-    className="offcanvas offcanvas-end offcanvas-color"
-    tabIndex="-1"
-    id="offcanvasRight"
-    data-bs-scroll="true" 
-    aria-labelledby="offcanvasRightLabel"
-  >
-    <div className="offcanvas-header">
-      <div
-        type="button"
-        className="btn-close text-reset btn-close-white ms-auto"
-        data-bs-dismiss="offcanvas"
-        aria-label="Close"
-      ></div>
-    </div>
 
-    <div
-    
-    
-      className="offcanvas-body"
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        flexDirection: "column",
-        height: "100vh",
-      }}
-    >
+    <>
+      <Offcanvas.Header closeButton className="custom-close-button">
+      
+      </Offcanvas.Header>
+
+
+    <Offcanvas.Body className="d-flex flex-column justify-content-between" style={{ height: "100vh" }}>
       <ul style={{ listStyleType: "none" , paddingLeft: "0px" , fontFamily:"serif" , fontStyle:"oblique"}} className="m-auto" >
         <li className="nav-item fs-5">
           <a className="nav-link text-white custom-underline"  data-bs-dismiss="offcanvas" aria-current="page"  onClick={() => scrollToSection("banner1")} href="#home">
@@ -92,11 +73,11 @@ const OffcanvasMenu = () => {
           </a>
         </li> */}
       </ul>
-      {/* <div style={{ marginTop: "auto", marginBottom: "30px" }}>
-        <HeaderFooter />
-      </div> */}
-    </div>
-  </div>
+
+    </Offcanvas.Body>
+    </>
+
+
   )
 }
 

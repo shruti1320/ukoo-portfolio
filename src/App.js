@@ -1,4 +1,5 @@
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import HomeScreen from "../src/screen/HomeScreen.js";
 import { ParallaxProvider } from "react-scroll-parallax";
 function App() {

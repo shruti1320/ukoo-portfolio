@@ -1,4 +1,5 @@
 import React, { Profiler, useCallback, useState } from "react";
+import { CloseButton } from "react-bootstrap";
 import {
   ParallaxBanner,
   ParallaxBannerLayer,
@@ -144,7 +145,7 @@ export default function Parallax2() {
             closeModal();
           }}
         >
-          <i class="fa-solid fa-xmark"></i>
+         <CloseButton style={{ filter: "invert(1)", top: "-35px", left: "-45px", position: "absolute"  }} />
         </div>
       </Modal>
 
