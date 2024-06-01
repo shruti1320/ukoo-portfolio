@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { Profiler, useCallback, useState } from "react";
+import { CloseButton } from "react-bootstrap";
 import {
   ParallaxBanner,
   ParallaxBannerLayer,
@@ -28,7 +29,6 @@ import "../scss/Parallax1.css";
 import "../scss/Scrollbar.scss";
 import "../scss/Footer.scss";
 import "../scss/Parallax1.scss";
-import CloseButton from 'react-bootstrap/CloseButton';
 
 const customStyles = {
   overlay: {
@@ -82,6 +82,34 @@ const customStyles = {
   },
 };
 
+
+const callback = (
+  id,
+  phase,
+  actualDuration,
+  startTime,
+  baseDuration,
+  commitTime,
+  interactions
+) => {
+  console.log(
+      "id " +
+          id +
+          " startTime " +
+          startTime +
+          " actualDuration " +
+          actualDuration +
+          " baseDuration " +
+          baseDuration +
+          " commitTime " +
+          commitTime +
+          " phase " +
+          phase +
+          " interactions " +
+          interactions
+  );
+};
+
 export default function Parallax2() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalContent, setModalContent] = useState(null);
@@ -93,6 +121,8 @@ export default function Parallax2() {
     setModalContent(null);
     setModalIsOpen(false);
   };
+
+
   return (
     <>
       <Modal
@@ -116,13 +146,12 @@ export default function Parallax2() {
             closeModal();
           }}
         >
-          <i class="fa-solid fa-xmark"></i>
-          {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="black" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg> */}
-      
+         <CloseButton style={{ filter: "invert(1)", top: "-35px", left: "-45px", position: "absolute"  }} />
         </div>
       </Modal>
 
    
+
         <ParallaxBanner
           id="banner1"
           style={{
@@ -132,7 +161,8 @@ export default function Parallax2() {
             display: "flex",
           }}
         >
-          {" "}
+         <Profiler id="1" onRender={callback}>
+
           <ParallaxBannerLayer
             image={uku1}
             className="banner1"
@@ -140,6 +170,7 @@ export default function Parallax2() {
             scale={[1, 1]}
             style={{ top: "-10px" }}
           ></ParallaxBannerLayer>
+         </Profiler>
           <Parallax>
             <div className="content-wrapper left-aligned">
               <div className="text-content" style={{ color: "white" }}>
@@ -308,14 +339,14 @@ export default function Parallax2() {
           scale={[1, 1]}
         />
         <Parallax
-          className="ms-auto"
+          // className="ms-auto"
           style={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
           }}
         >
-          <div className="content-wrapper right-aligned">
+          <div className="content-wrapper left-aligned">
             {/* <div className="text-content ">The Ukoo</div> */}
             <div className="text-content ">
               <div className="text-content" style={{ color: "white" }}>
@@ -369,7 +400,8 @@ export default function Parallax2() {
       >
         <ParallaxBannerLayer
           image={uku6}
-          speed={-35}
+          speed={-25}
+          style={{right:"-300px"}}
           className="banner1"
           scale={[1, 1]}
         />
@@ -508,7 +540,15 @@ export default function Parallax2() {
                   className=" text-wrap text-md fw-bold "
                   style={{ textShadow: "3px 3px 3px #000" }}
                 >
-                  Embracing timeless beauty amidst the
+                  Embracing timeless beauty amidst 
+                </strong>
+              </div>
+              <div className="text-content ">
+                <strong
+                  className=" text-wrap text-md fw-bold "
+                  style={{ textShadow: "3px 3px 3px #000" }}
+                >
+                  the majestic expanse of
                 </strong>
               </div>
               <div className="text-content">
@@ -516,7 +556,7 @@ export default function Parallax2() {
                   className=" text-wrap text-md fw-bold "
                   style={{ textShadow: "3px 3px 3px #000" }}
                 >
-                  majestic expanse of Dubai's desert.
+                   Dubai's desert.
                 </strong>
               </div>
 
@@ -563,7 +603,15 @@ export default function Parallax2() {
                   className=" text-wrap text-md fw-bold "
                   style={{ textShadow: "3px 3px 3px #000" }}
                 >
-                  Embarking on a journey of discovery amidst the
+                  Embarking on a journey of discovery 
+                </strong>
+              </div>
+              <div className="text-content ">
+                <strong
+                  className=" text-wrap text-md fw-bold "
+                  style={{ textShadow: "3px 3px 3px #000" }}
+                >
+                 amidst the intricate world of
                 </strong>
               </div>
               <div className="text-content">
@@ -571,7 +619,7 @@ export default function Parallax2() {
                   className=" text-wrap text-md fw-bold "
                   style={{ textShadow: "3px 3px 3px #000" }}
                 >
-                  intricate world of jewelry craftsmanship.
+                   jewelry craftsmanship.
                 </strong>
               </div>
 

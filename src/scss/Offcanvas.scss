@@ -1,8 +1,19 @@
-/* Custom CSS for offcanvas backdrop */
-.modal-backdrop.show {
-    opacity: 0;
-}
-
-// .modal-backdrop {
-//     opacity: 0.2;
-// }
+.custom-close-button .btn-close {
+    filter: invert(1); /* Makes the button white */
+    background-color: transparent; /* Ensure the background is transparent */
+    box-shadow: none; /* Removes any shadow */
+    outline: none; /* Removes outline */
+    border: none; /* Removes border */
+    opacity: 1; /* Ensures button is fully opaque */
+  }
+  
+  .custom-close-button .btn-close:hover,
+  .custom-close-button .btn-close:focus {
+    filter: invert(1); /* Keeps the button white on hover/focus */
+    background-color: transparent; /* Ensures no background on hover/focus */
+    box-shadow: none; /* Ensures no shadow on hover/focus */
+    outline: none; /* Ensures no outline on hover/focus */
+    border: none; /* Ensures no border on hover/focus */
+    opacity: 1; /* Ensures button is fully opaque on hover/focus */
+  }
+  
