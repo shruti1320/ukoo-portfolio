@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2f854d40.css",
-    "main.js": "/static/js/main.682e0ea4.js",
+    "main.js": "/static/js/main.cbfb218f.js",
     "static/js/453.2af5fb5e.chunk.js": "/static/js/453.2af5fb5e.chunk.js",
     "static/media/uku1.jpg": "/static/media/uku1.1e6618eb4166e22c5bf9.jpg",
     "static/media/uku.jpg": "/static/media/uku.fe265ff6303d6a1f8f85.jpg",
@@ -37,11 +37,11 @@
     "static/media/uku_logo.png": "/static/media/uku_logo.c63248da8e0a2e10db55.png",
     "index.html": "/index.html",
     "main.2f854d40.css.map": "/static/css/main.2f854d40.css.map",
-    "main.682e0ea4.js.map": "/static/js/main.682e0ea4.js.map",
+    "main.cbfb218f.js.map": "/static/js/main.cbfb218f.js.map",
     "453.2af5fb5e.chunk.js.map": "/static/js/453.2af5fb5e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f854d40.css",
-    "static/js/main.682e0ea4.js"
+    "static/js/main.cbfb218f.js"
   ]
 }
