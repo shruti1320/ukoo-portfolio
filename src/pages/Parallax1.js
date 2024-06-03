@@ -279,7 +279,7 @@ export default function Parallax1() {
         />
           <ParallaxBannerLayer>
         <div className="content-wrapper">
-            <div className="text-content text-white fs-4">The Ukoo</div>
+            <div className="text-content text-white fs-4">The Ukoooo</div>
             <div className="text-content text-white fs-4">Persembahan Forum Teknologi Sumatera Selatan</div>
             <div className="text-content text-white fs-4">Palembang, 28 - 29 November 2020</div>
             <div><button type="button" className="btn1"  onClick={()=>{openModal(9)}}>View more</button></div>
